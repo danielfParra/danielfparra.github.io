@@ -1866,11 +1866,9 @@ ul {
 }
 .list-inline.social li a {
   display: block;
-  border: 1px solid #fff;
-  border-radius: 2px;
 }
 .list-inline li a img {
-  width: 35px;
+  width: 22px;
 }
 
 
