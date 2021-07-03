@@ -1910,7 +1910,7 @@ ul {
   -webkit-transition: all 500ms ease;
   background-color: #17181D;
   color: #58CF90;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   font-size: 24px;
 }
 
@@ -1997,11 +1997,10 @@ ul {
 
 .accordion-box .collapse-title {
   color: #58CF90!important;
-  text-transform: uppercase!important;
+  /*text-transform: uppercase!important;*/
   font-size: 26px!important;
 }
 .acc-btn a {
   color: #59CF90;
   font-size: 16px;
-  text-transform: capitalize;
 }

@@ -4,9 +4,6 @@
     <list default="true" id="6837f964-648a-42bc-b84a-4255b89af88e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/likedin.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/likedin.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/researchgate.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/researchgate.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/twitter.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/twitter.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +38,7 @@
       <updated>1625260046401</updated>
       <workItem from="1625260049156" duration="203000" />
       <workItem from="1625260419254" duration="2765000" />
+      <workItem from="1625302636218" duration="4163000" />
     </task>
     <servers />
   </component>
