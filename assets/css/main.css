@@ -1896,7 +1896,6 @@ ul {
   /*box-shadow: #101010 2px 2px 6px, #3e3b3b -2px -2px 6px;*/
   border-radius: 5px;
   position: relative;
-  font-size: 18px;
   cursor: pointer;
   line-height: 30px;
   font-family: "Muli", sans-serif;
@@ -1909,10 +1908,25 @@ ul {
   -moz-transition: all 500ms ease;
   -webkit-transition: all 500ms ease;
   background-color: #17181D;
-  color: #58CF90;
   /*text-transform: uppercase;*/
   font-size: 24px;
 }
+
+.accordion-box .block .acc-btn-nocontent {
+  /*box-shadow: #101010 2px 2px 6px, #3e3b3b -2px -2px 6px;*/
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+  line-height: 30px;
+  font-family: "Muli", sans-serif;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 19px 50px 19px 35px;
+  background-color: #17181D;
+  /*text-transform: uppercase;*/
+  font-size: 18px;
+}
+
 
 .accordion-box .block .acc-btn.active {
 }
@@ -1940,21 +1954,39 @@ ul {
   background-color:#58CF90;
 }
 
-.accordion-box .block .icon-outer .fa-plus{
-  opacity:1;
+/*.accordion-box .block .icon-outer .fa-plus{*/
+/*  opacity:1;*/
+/*}*/
+
+/*.accordion-box .block .icon-outer .fa-minus{*/
+/*  opacity:0;*/
+/*}*/
+
+/*.accordion-box .block .acc-btn:after  .icon-outer .fa-minus{*/
+/*  opacity:1;*/
+/*}*/
+
+/*.accordion-box .block .acc-btn.collapsed:after .icon-outer .fa-plus{*/
+/*  opacity:1;*/
+/*}*/
+
+.accordion .acc-btn:after{
+    font-family: 'eleganticons', serif;
+    content: "\32";
+    float: right;
+    /*background-color:#58CF90;*/
+    width:30px;
+    height:30px;
+    font-size: 24px;
+    text-align: center;
+    line-height:32px;
+}
+.accordion .acc-btn.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\33";
 }
 
-.accordion-box .block .icon-outer .fa-minus{
-  opacity:0;
-}
-
-.accordion-box .block .acc-btn.active .icon-outer .fa-minus{
-  opacity:1;
-}
-
-.accordion-box .block .acc-btn.active .icon-outer .fa-plus{
-  opacity:0;
-}
+content:"\32"
 
 .accordion-box .block .acc-content{
   position:relative;
@@ -1975,7 +2007,7 @@ ul {
   padding:30px 35px 30px 35px;
 }
 
-.accordion-box .block .content .accordian-text{
+.accordion-box .block .content .accordion-text{
   line-height:1.9em;
   font-size:16px; 
   color:#84858a;
@@ -2004,3 +2036,5 @@ ul {
   color: #59CF90;
   font-size: 16px;
 }
+
+
