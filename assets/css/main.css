@@ -1909,7 +1909,7 @@ ul {
   -webkit-transition: all 500ms ease;
   background-color: #17181D;
   /*text-transform: uppercase;*/
-  font-size: 24px;
+  font-size: 28px;
 }
 
 .accordion-box .block .acc-btn-nocontent {
@@ -1924,7 +1924,6 @@ ul {
   padding: 19px 50px 19px 35px;
   background-color: #17181D;
   /*text-transform: uppercase;*/
-  font-size: 18px;
 }
 
 
@@ -1986,8 +1985,6 @@ ul {
     content: "\33";
 }
 
-content:"\32"
-
 .accordion-box .block .acc-content{
   position:relative;
   display:none;
@@ -2032,9 +2029,12 @@ content:"\32"
   /*text-transform: uppercase!important;*/
   font-size: 26px!important;
 }
-.acc-btn a {
-  color: #59CF90;
-  font-size: 16px;
-}
+
+/*.acc-btn a {*/
+/*  color: #59CF90;*/
+/*}*/
+
+.link { color: #fff; } /* CSS link color (red) */
+.link:hover { color: #59CF90; } /* CSS link hover (green) */
 
 
