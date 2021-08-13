@@ -746,7 +746,7 @@ ul {
   line-height: 100px;
   padding: 0px 15px;
   text-align: center;
-  color: #454545;
+  color: #303030;
   font-size: 16px;
   font-weight: 700;
   position: relative;
@@ -1819,16 +1819,16 @@ ul {
 .dark .blog-single .bottom .social-media a,
 .dark .blog-single .bottom .tags ul li,
 .dark .testimonials .item .image:after {
-  background-color: #0b0c10;
+  background-color: #1A1616;
 }
 
 .dark .header-left {
-  border-right: 1px solid #17181D;
+  border-right: 1px solid #1A1616;
 }
 
 .dark .about .hero,
 .dark .services .item:hover .circle {
-  border: 1px solid #17181D;
+  border: 1px solid #1A1616;
 }
 
 .dark .form .form-control {
