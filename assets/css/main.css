@@ -55,6 +55,7 @@ body {
   background-color: #ffffff;
   color: #454545;
   overflow-x: hidden;
+  font-size: 16px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -662,8 +663,8 @@ ul {
   right: 0;
   text-align: center;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   margin: auto;
   -webkit-box-shadow: 0 4px 6px -1px rgba(242, 30, 78, 0.1), 0 2px 4px -1px rgba(242, 30, 78, 0.06);
           box-shadow: 0 4px 6px -1px rgba(242, 30, 78, 0.1), 0 2px 4px -1px rgba(242, 30, 78, 0.06);
@@ -882,8 +883,8 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
-  bottom: 30px;
+  position: relative;
+  bottom: -50px;
 }
 
 .my-info .item {
