@@ -862,7 +862,7 @@ ul {
 }
 
 .home .banner h1.cd-headline {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 900;
 }
 
@@ -879,12 +879,12 @@ ul {
 }
 
 .my-info {
-  width: 60%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  bottom: -30px;
+  bottom: -50px;
 }
 
 .my-info .item {
