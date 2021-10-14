@@ -55,7 +55,7 @@ body {
   background-color: #ffffff;
   color: #454545;
   overflow-x: hidden;
-  font-size: 16px;
+  font-size: calc(0.75em + 0.75vw);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -66,11 +66,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 40px;
+    font-size: calc(1em + 2vw);
 }
 
 h2 {
-  font-size: 32px;
+  font-size: calc(1em + 0.75vw);
 }
 
 h3 {
@@ -862,7 +862,7 @@ ul {
 }
 
 .home .banner h1.cd-headline {
-  font-size: 30px;
+  font-size: calc(1em + 2vw);
   font-weight: 900;
 }
 
@@ -1680,10 +1680,10 @@ ul {
 
 @media screen and (max-width: 567px) {
   h1 {
-    font-size: 32px;
+    font-size: calc(1em + 2vw);
   }
   h2 {
-    font-size: 28px;
+    font-size: calc(1em + 0.75vw);
   }
   .menu-toggle {
     right: 15px;
@@ -1703,7 +1703,7 @@ ul {
     background-position: unset !important;
   }
   .home .banner h1.cd-headline {
-    font-size: 32px;
+    font-size: calc(1em + 2vw);
   }
   .my-info {
     display: none;
