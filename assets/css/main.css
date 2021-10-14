@@ -849,25 +849,26 @@ ul {
   color: #58cf90;
 }
 
-.home .banner h6 {
+/*.home .banner h6 {
   font-weight: 400;
   letter-spacing: 1px;
   color: #454545;
   font-family: 'Caveat Brush', cursive;
   font-size: 40px;
-}
+}*/
 
 .home .banner h1 {
   font-weight: 900;
 }
 
 .home .banner h1.cd-headline {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 900;
 }
 
 .home .banner h1.cd-headline.clip span {
-  padding: 0;
+  padding: 10px;
+  margin-top: 10px;
 }
 
 .home .banner h1.cd-headline .cd-words-wrapper b {
