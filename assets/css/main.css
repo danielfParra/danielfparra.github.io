@@ -1615,7 +1615,7 @@ ul {
 @media screen and (max-width: 991px) {
   .about .hero,
   .contact .contact-info {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   .blog-single .content {
     padding: 20px;
@@ -1677,7 +1677,7 @@ ul {
     display: block;
   }
   .max-width-600 {
-    width: 60%;
+    width: 75%;
   }
 }
 
