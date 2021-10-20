@@ -1623,6 +1623,17 @@ ul {
 }
 
 @media screen and (max-width: 768px) {
+   h1 {
+    font-size: calc(1em + 2vw);
+  }
+  h2 {
+    font-size: calc(1em + 0.75vw);
+  }
+  .home .banner h1.cd-headline.clip {
+    padding: 10px;
+    margin-top: 150px;
+    margin-bottom: 30px;
+}
   .header-left {
     -webkit-transform: translateX(-100px);
             transform: translateX(-100px);
@@ -1678,6 +1689,9 @@ ul {
   }
   .max-width-600 {
     width: 75%;
+  }
+   .home .banner h1.cd-headline {
+    font-size: calc(1em + 2vw);
   }
 }
 
