@@ -55,7 +55,7 @@ body {
   background-color: #ffffff;
   color: #454545;
   overflow-x: hidden;
-  font-size: calc(0.75em + 0.75vw);
+  font-size: calc(0.55em + 0.75vw);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -107,6 +107,10 @@ a:hover, a:focus {
 
 .bg-base-color {
   background-color: #58cf90 !important;
+}
+
+.bg-light {
+    background-color: #F9F7F5 !important;
 }
 
 .font-w-600 {
@@ -644,11 +648,14 @@ ul {
   width: 100px;
   height: 100vh;
   background-color: #ffffff;
-  border-right: 1px solid #f8f9fa;
+ /* border-right: 1px solid #f8f9fa;*/
   z-index: 999;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  box-shadow: #101010 2px 2px 6px, #3e3b3b -2px -2px 6px;
 }
+
+
 
 .header-left.open {
   -webkit-transform: translateX(0px);
@@ -1903,8 +1910,16 @@ ul {
 .accordion-box .block{
   position: relative;
   margin-bottom:20px;
-/*  box-shadow: #101010 2px 2px 6px, #3e3b3b -2px -2px 6px;*/
+ /* box-shadow: #101010 2px 2px 6px, #3e3b3b -2px -2px 6px;*/
   border-radius: 5px;
+}
+
+.accordion-box .block:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+          box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
 }
 
 .accordion-box .block.active-block{
@@ -1918,7 +1933,7 @@ ul {
   cursor: pointer;
   line-height: 30px;
   font-family: "Muli", sans-serif;
-  color: #ffffff;
+   /*color: #ffffff;*/
   font-weight: 600;
   padding: 19px 50px 19px 35px;
   transition: all 500ms ease;
@@ -1926,7 +1941,7 @@ ul {
   -o-transition: all 500ms ease;
   -moz-transition: all 500ms ease;
   -webkit-transition: all 500ms ease;
-  background-color: #17181D;
+  background-color: #f8f9fa;
   /*text-transform: uppercase;*/
   font-size: 28px;
 }
@@ -1938,10 +1953,10 @@ ul {
   cursor: pointer;
   line-height: 30px;
   font-family: "Muli", sans-serif;
-  color: #ffffff;
+  /* color: #ffffff;*/
   font-weight: 600;
   padding: 19px 50px 19px 35px;
-  background-color: #17181D;
+  background-color: #f8f9fa;
   /*text-transform: uppercase;*/
 }
 
@@ -1953,7 +1968,7 @@ ul {
   right:20px;
   top:18px;
   font-size:20px;
-  color: #262626;
+  /*color: #262626;*/
   transition:all 500ms ease;
   -moz-transition:all 500ms ease;
   -webkit-transition:all 500ms ease;
@@ -1965,7 +1980,7 @@ ul {
   right: 0px;
   width:30px;
   height:30px;
-  color:#ffffff;
+/*  color:#ffffff;*/
   font-size: 14px;
   text-align: center;
   line-height:32px;
@@ -2040,7 +2055,7 @@ ul {
 
 .acc-btn {
   font-size: 18px !important;
-  color: #fff !important;
+ /* color: #fff !important;*/
 }
 
 .accordion-box .collapse-title {
@@ -2053,7 +2068,7 @@ ul {
 /*  color: #59CF90;*/
 /*}*/
 
-.link { color: #fff; } /* CSS link color (red) */
+
 .link:hover { color: #59CF90; } /* CSS link hover (green) */
 
 
