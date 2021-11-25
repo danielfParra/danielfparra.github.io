@@ -55,7 +55,7 @@ body {
   background-color: #ffffff;
   color: #454545;
   overflow-x: hidden;
-  font-size: calc(0.55em + 0.75vw);
+  font-size: calc(1em);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -67,6 +67,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size: calc(1em + 2vw);
+    text-align: left;
 }
 
 h2 {
@@ -874,8 +875,9 @@ ul {
 }
 
 .home .banner h1.cd-headline.clip span {
-  padding: 10px;
+  padding-right: 10px;
   margin-top: 10px;
+  text-align: left;
 }
 
 .home .banner h1.cd-headline .cd-words-wrapper b {
@@ -1622,7 +1624,7 @@ ul {
 @media screen and (max-width: 991px) {
   .about .hero,
   .contact .contact-info {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   .blog-single .content {
     padding: 20px;
@@ -1630,11 +1632,13 @@ ul {
 }
 
 @media screen and (max-width: 768px) {
+
+
    h1 {
     font-size: calc(1em + 2vw);
   }
   h2 {
-    font-size: calc(1em + 0.75vw);
+    font-size: calc(1.5em + 0.75vw);
   }
   .home .banner h1.cd-headline.clip {
     padding: 10px;
@@ -1707,18 +1711,13 @@ ul {
     font-size: calc(1em + 2vw);
   }
   h2 {
-    font-size: calc(1em + 0.75vw);
+    font-size: calc(1.5em + 0.75vw);
   }
   .menu-toggle {
     right: 15px;
   }
-  .max-width-450 {
-    width: auto;
-  }
-  .max-width-600 {
-    width: auto;
-  }
-  .section {
+
+   .section {
     padding-left: 0;
     padding-right: 0;
   }
@@ -1729,8 +1728,12 @@ ul {
   .home .banner h1.cd-headline {
     font-size: calc(1em + 2vw);
   }
+  .btn-custom.twitter-btn {
+  display: none;
+  }
   .my-info {
-    display: none;
+    padding-top: 15px;
+    display: contents;
   }
   .about .details .info li {
     width: 100%;
@@ -1941,7 +1944,7 @@ ul {
   -o-transition: all 500ms ease;
   -moz-transition: all 500ms ease;
   -webkit-transition: all 500ms ease;
-  background-color: #f8f9fa;
+  background-color: #F9F7F5;
   /*text-transform: uppercase;*/
   font-size: 28px;
 }
@@ -1956,7 +1959,7 @@ ul {
   /* color: #ffffff;*/
   font-weight: 600;
   padding: 19px 50px 19px 35px;
-  background-color: #f8f9fa;
+  background-color: #F9F7F5;
   /*text-transform: uppercase;*/
 }
 
