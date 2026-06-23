@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-06-23T00:00:00Z",
+  "title": "Design System: Daniel F. Parra",
+  "extensions": {
+    "colorMeta": {
+      "accent-mint": {
+        "role": "primary",
+        "displayName": "Signal Mint",
+        "canonical": "oklch(85% 0.13 165)",
+        "tonalRamp": [
+          "oklch(20% 0.04 165)",
+          "oklch(32% 0.06 165)",
+          "oklch(44% 0.09 165)",
+          "oklch(56% 0.11 165)",
+          "oklch(68% 0.13 165)",
+          "oklch(78% 0.13 165)",
+          "oklch(85% 0.13 165)",
+          "oklch(93% 0.07 165)"
+        ]
+      },
+      "ink-page": {
+        "role": "neutral",
+        "displayName": "Page Black",
+        "canonical": "oklch(14% 0.004 130)",
+        "tonalRamp": [
+          "oklch(14% 0.004 130)",
+          "oklch(18% 0.005 130)",
+          "oklch(22% 0.006 130)",
+          "oklch(30% 0.006 120)",
+          "oklch(45% 0.005 110)",
+          "oklch(62% 0.006 100)",
+          "oklch(82% 0.008 95)",
+          "oklch(92% 0.01 95)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Bone Ink",
+        "canonical": "oklch(92% 0.01 95)",
+        "tonalRamp": [
+          "oklch(45% 0.006 100)",
+          "oklch(56% 0.007 100)",
+          "oklch(66% 0.008 98)",
+          "oklch(74% 0.009 96)",
+          "oklch(82% 0.01 95)",
+          "oklch(88% 0.01 95)",
+          "oklch(92% 0.01 95)",
+          "oklch(96% 0.008 95)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero name only; rises in line-by-line on load." },
+      "headline": { "displayName": "Headline", "purpose": "Section openers (h2); one mint weight-300 word per set." },
+      "title": { "displayName": "Title", "purpose": "Paper titles, method/CV headings; shifts to mint on hover." },
+      "body": { "displayName": "Body", "purpose": "Inter prose; ledes step up to 17-19px; abstracts cap 65-75ch." },
+      "label": { "displayName": "Label", "purpose": "Mono eyebrows, section numbers, meta, captions, button text." }
+    },
+    "shadows": [
+      { "name": "mint-glow", "value": "0 0 12px #7ce3b5", "purpose": "Soft glow on the live brand dot. The only shadow in the system — light, not lift." }
+    ],
+    "motion": [
+      { "name": "ease-out", "value": "cubic-bezier(0.2, 0.7, 0.2, 1)", "purpose": "The single decelerating curve for entrances and state transitions. No bounce, no elastic." }
+    ],
+    "breakpoints": [
+      { "name": "mobile", "value": "960px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Main call-to-action; flips to mint and lifts on hover, scales on press.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\">Read the research<svg viewBox=\"0 0 14 14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M3 7h8M8 4l3 3-3 3\"/></svg></a>",
+      "css": ".ds-btn-primary{font-family:'Geist Mono',ui-monospace,monospace;font-size:13px;padding:14px 22px;border-radius:100px;background:#ebe9e2;color:#0b0c0a;border:1px solid #ebe9e2;display:inline-flex;align-items:center;gap:10px;cursor:pointer;text-decoration:none;transition:transform .2s cubic-bezier(.2,.7,.2,1),background .2s,border-color .2s,color .2s}.ds-btn-primary svg{width:14px;height:14px}.ds-btn-primary:hover{background:#7ce3b5;color:#0b0c0a;border-color:#7ce3b5;transform:translateY(-2px)}.ds-btn-primary:focus-visible{outline:2px solid #7ce3b5;outline-offset:3px}.ds-btn-primary:active{transform:scale(.97)}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Secondary action; transparent with a hairline that brightens on hover.",
+      "html": "<a class=\"ds-btn-ghost\" href=\"#\">Download CV<svg viewBox=\"0 0 14 14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M7 2v8M4 7l3 3 3-3M2 12h10\"/></svg></a>",
+      "css": ".ds-btn-ghost{font-family:'Geist Mono',ui-monospace,monospace;font-size:13px;padding:14px 22px;border-radius:100px;background:transparent;color:#ebe9e2;border:1px solid #ebe9e22e;display:inline-flex;align-items:center;gap:10px;cursor:pointer;text-decoration:none;transition:transform .2s cubic-bezier(.2,.7,.2,1),border-color .2s}.ds-btn-ghost svg{width:14px;height:14px}.ds-btn-ghost:hover{border-color:#ebe9e2;transform:translateY(-2px)}.ds-btn-ghost:focus-visible{outline:2px solid #7ce3b5;outline-offset:3px}.ds-btn-ghost:active{transform:scale(.97)}"
+    },
+    {
+      "name": "Nav CTA",
+      "kind": "button",
+      "refersTo": "cta-nav",
+      "description": "The lit primary action in the fixed nav; mint at rest.",
+      "html": "<a class=\"ds-cta-nav\" href=\"#\">Get in touch →</a>",
+      "css": ".ds-cta-nav{font-family:'Geist Mono',ui-monospace,monospace;font-size:12px;font-weight:500;padding:9px 16px;border-radius:100px;background:#7ce3b5;color:#0b0c0a;text-decoration:none;display:inline-block;transition:transform .2s cubic-bezier(.2,.7,.2,1)}.ds-cta-nav:hover{transform:translateY(-1px)}.ds-cta-nav:focus-visible{outline:2px solid #7ce3b5;outline-offset:3px}.ds-cta-nav:active{transform:scale(.97)}"
+    },
+    {
+      "name": "Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Topic / keyword tag with a leading dot that lights mint on hover.",
+      "html": "<span class=\"ds-chip\">Lying &amp; dishonesty</span>",
+      "css": ".ds-chip{font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;padding:7px 13px;border:1px solid #ebe9e22e;border-radius:100px;color:#a8a69d;letter-spacing:.02em;display:inline-flex;align-items:center;gap:6px;transition:border-color .2s,color .2s}.ds-chip::before{content:'';width:5px;height:5px;border-radius:50%;background:#66645d;transition:background .2s}.ds-chip:hover{border-color:#7ce3b5;color:#7ce3b5}.ds-chip:hover::before{background:#7ce3b5}"
+    },
+    {
+      "name": "Nav Link",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Pill nav item; active state fills to surface and grows a mint dot before the label.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-nav-link\" href=\"#\">Home</a><a class=\"ds-nav-link is-active\" href=\"#\">Research</a></nav>",
+      "css": ".ds-nav{display:inline-flex;gap:4px}.ds-nav-link{font-family:'Geist Mono',ui-monospace,monospace;font-size:12px;color:#a8a69d;padding:8px 14px;border-radius:100px;display:inline-flex;align-items:center;gap:8px;text-decoration:none;transition:color .25s,background .25s}.ds-nav-link::before{content:'';width:4px;height:4px;border-radius:50%;background:transparent;transition:background .2s}.ds-nav-link:hover{color:#ebe9e2;background:#121412}.ds-nav-link.is-active{color:#ebe9e2;background:#121412}.ds-nav-link.is-active::before{background:#7ce3b5}"
+    },
+    {
+      "name": "Research Paper (expandable)",
+      "kind": "custom",
+      "refersTo": "paper",
+      "description": "Signature row that unfolds to its abstract via grid-template-rows; mint scale-bar grows at the left, toggle rotates to a close mark.",
+      "html": "<article class=\"ds-paper is-open\"><div class=\"ds-paper-head\"><div class=\"ds-paper-title\">Observability and lying</div><div class=\"ds-paper-toggle\"><svg width=\"12\" height=\"12\" viewBox=\"0 0 12 12\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\"><path d=\"M6 2v8M2 6h8\"/></svg></div></div><div class=\"ds-paper-body\"><div class=\"ds-paper-inner\"><p class=\"ds-paper-abstract\">Increasing the observability of the random draw <em>decreases cheating</em>.</p></div></div></article>",
+      "css": ".ds-paper{border-bottom:1px solid #ebe9e214;position:relative;cursor:pointer}.ds-paper::before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:#7ce3b5;transform:scaleY(0);transform-origin:top;transition:transform .3s cubic-bezier(.2,.7,.2,1)}.ds-paper:hover::before,.ds-paper.is-open::before{transform:scaleY(1)}.ds-paper-head{display:flex;justify-content:space-between;align-items:center;gap:28px;padding:28px 24px}.ds-paper-title{font-family:'Google Sans Flex',Inter,sans-serif;font-weight:500;font-size:26px;letter-spacing:-.02em;color:#ebe9e2;transition:color .2s}.ds-paper:hover .ds-paper-title{color:#7ce3b5}.ds-paper-toggle{width:36px;height:36px;border:1px solid #ebe9e22e;border-radius:50%;display:grid;place-items:center;color:#66645d;transition:transform .3s cubic-bezier(.2,.7,.2,1),border-color .3s,background .3s,color .3s}.ds-paper.is-open .ds-paper-toggle{background:#7ce3b5;color:#0b0c0a;border-color:#7ce3b5;transform:rotate(45deg)}.ds-paper-body{display:grid;grid-template-rows:0fr;transition:grid-template-rows .4s cubic-bezier(.2,.7,.2,1);padding:0 24px 0 112px}.ds-paper.is-open .ds-paper-body{grid-template-rows:1fr;padding-bottom:32px}.ds-paper-inner{overflow:hidden;min-height:0}.ds-paper-abstract{font-size:16px;line-height:1.75;color:#a8a69d;max-width:820px}.ds-paper-abstract em{color:#7ce3b5;font-style:italic;font-weight:500}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Field Notebook at Night",
+    "overview": "This is an economist's observation log kept in low light. The page is a near-black field; a single luminous minty-green is the ink reserved for findings. A high-contrast serif plays wall text and headlines; Inter carries the prose; Geist Mono is the margin note. Studious and precise, but warm bone-white text and generous breathing room keep it human, not austere. Depth comes from tonal layering, not boxes. Motion is part of the build: elements rise into place, the accent answers every hover, research entries unfold like turning to a dog-eared page. Nothing bounces; everything decelerates. It rejects the generic faculty page and the Scholar/ORCID export: papers here are curated specimens, not database rows.",
+    "keyCharacteristics": [
+      "Near-black ground; one mint accent used sparingly as 'the finding'",
+      "Three-family type system: serif display, Inter body, mono labels",
+      "Flat surfaces, tonal layering, hairline rules — no card shadows",
+      "Tactile, responsive motion with a single decelerating ease",
+      "Warm-neutral ink, not clinical white; calm density, never cramped"
+    ],
+    "rules": [
+      { "name": "The One Green Rule", "body": "Signal Mint appears on no more than ~10% of any screen. It marks findings and the single primary action — nothing else. If a second element wants the green, one of them is not a finding.", "section": "colors" },
+      { "name": "The Warm-White Rule", "body": "Body text is Bone Ink (#ebe9e2), never pure white. The warmth is what keeps a dark, serious page from feeling clinical.", "section": "colors" },
+      { "name": "The Mint Emphasis Rule", "body": "Emphasis inside serif headings and abstracts is done by dropping to weight 300 and switching to Signal Mint — never by italic slant, never by bold.", "section": "typography" },
+      { "name": "The Mono-Label Rule", "body": "Monospace is for labels, numbers, and timestamps only. Never set a sentence or an abstract in Geist Mono.", "section": "typography" },
+      { "name": "The No-Lift Rule", "body": "Surfaces never cast a shadow to fake height. If something needs to feel raised, it steps up one tonal surface and gains a hairline, or it moves. Glow is reserved for live/active indicators.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do keep Signal Mint to <=10% of any screen — findings and the one primary action only (The One Green Rule).",
+      "Do set body text in Bone Ink (#ebe9e2), never pure white (The Warm-White Rule).",
+      "Do emphasize by dropping to serif weight 300 + mint, never italic or bold.",
+      "Do convey depth with tonal surfaces and hairline rules; keep surfaces flat.",
+      "Do name transition properties and give pressables scale(0.97) on :active.",
+      "Do honor prefers-reduced-motion: entrances resolve instantly, looping decoration stops.",
+      "Do animate the paper open with grid-template-rows, not max-height."
+    ],
+    "donts": [
+      "Don't build a generic university faculty page: no white background, no blue underlined links, no headshot-left + flat publication dump.",
+      "Don't ship a Google Scholar / ORCID-style listing — papers are curated specimens, not database rows.",
+      "Don't reach for SaaS landing-page cliches: no hero-metric template, no gradient buttons, no identical icon-heading-text card grids, no marketing buzzwords.",
+      "Don't over-design into a flashy portfolio: no gratuitous animation or gimmicks that would undercut academic credibility.",
+      "Don't add drop shadows to fake elevation (The No-Lift Rule).",
+      "Don't set sentences or abstracts in Geist Mono; mono is labels only.",
+      "Don't use transition: all or animate layout properties like max-height.",
+      "Don't push Muted Ink lighter for 'elegance' — it must hold 4.5:1 on the ground."
+    ]
+  }
+}
