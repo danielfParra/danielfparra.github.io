@@ -1,1017 +1,848 @@
-<!doctype html>
-<html lang="en" xmlns="">
-<head>
-    <!-- Meta -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="assets/img/logo_white.png" type="image/x-icon" />
-
-    <!-- Title -->
-    <title>Daniel Parra | Econ | Behavioral | Lying  </title>
-    <meta name="author" content="Daniel Parra">
-    <meta name="description" content="Daniel Parra's personal website. Information about his research, cv, and contact. WZB and Berlin School of Economics.">
-    <meta name="keywords" content="WZB, Berlin, experimental, econ, economics, Javeriana">
-
-    <!-- CSS Plugins -->
-    <link rel="stylesheet" href="assets/css/all.css">
-    <link rel="stylesheet" href="assets/css/elegant-font-icons.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/jquery.animatedheadline.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+<!DOCTYPE html><html lang="en"><head>
 
 
-    <!-- Font Google -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&amp;display=swap" rel="stylesheet">
-   
-    <!-- main CSS -->
-    <link rel="stylesheet" href="assets/css/main.css">
+<meta charset="utf-8">
+<title>Daniel F. Parra — Behavioral &amp; Experimental Economist</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="author" content="Daniel Parra">
+<meta name="description" content="Daniel Parra's personal website. Information about his research, cv, and contact. WZB and Berlin School of Economics.">
+<meta name="keywords" content="WZB, Berlin, experimental, econ, economics, Javeriana">
+<link rel="canonical" href="https://danielfparra.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://danielfparra.github.io/">
+<meta property="og:title" content="Daniel F. Parra — Behavioral & Experimental Economist">
+<meta property="og:description" content="Experiments on lying, corruption, and the cost of honesty. Research, CV, and contact for Daniel F. Parra, Assistant Professor at PU Javeriana.">
+<meta property="og:image" content="https://danielfparra.github.io/assets/img/bg/dark_pic_hero.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@Danielf_Parra">
+<meta name="twitter:title" content="Daniel F. Parra — Behavioral & Experimental Economist">
+<meta name="twitter:description" content="Experiments on lying, corruption, and the cost of honesty. Research, CV, and contact.">
+<meta name="twitter:image" content="https://danielfparra.github.io/assets/img/bg/dark_pic_hero.png">
+<link rel="shortcut icon" href="assets/img/logo_white.png" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+  /* Google Sans Flex — OFL, served as a variable font via Fontsource CDN */
+  @font-face{
+    font-family:'Google Sans Flex';
+    font-style:normal;
+    font-display:swap;
+    font-weight:1 1000;
+    src:url(https://cdn.jsdelivr.net/fontsource/fonts/google-sans-flex:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
+    unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+  }
+  :root{
+    --bg:#0b0c0a;
+    --bg-2:#121412;
+    --bg-3:#1a1d1a;
+    --ink:#ebe9e2;
+    --ink-2:#a8a69d;
+    --ink-3:#7d7a71;
+    --rule:rgba(235,233,226,.08);
+    --rule-strong:rgba(235,233,226,.18);
+    --accent:#7ce3b5;        /* from glasses — minty green */
+    --accent-ink:#0b0c0a;
+    --warm:#e8b489;          /* warm amber — atmosphere only, hero & contact */
+    --serif:"Google Sans Flex", "Inter", ui-sans-serif, system-ui, sans-serif;
+    --sans:"Inter", ui-sans-serif, system-ui, sans-serif;
+    --mono:"Geist Mono", ui-monospace, monospace;
+    --ease-out:cubic-bezier(.2,.7,.2,1);
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased;min-height:100vh;overflow-x:hidden;transition:background .35s,color .35s;font-feature-settings:"cv11","ss01"}
+  a{color:inherit;text-decoration:none}
+  ::selection{background:var(--accent);color:var(--accent-ink)}
+  a:focus-visible,button:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+  .skip-link{position:fixed;left:16px;top:16px;z-index:60;background:var(--accent);color:var(--accent-ink);font-family:var(--mono);font-size:12px;padding:10px 16px;border-radius:100px;transform:translateY(-160%);transition:transform .2s var(--ease-out)}
+  .skip-link:focus-visible{transform:translateY(0)}
+  .nav-toggle{display:none}
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+  /* Noise grain — subtle, modern */
+  body::before{
+    content:"";position:fixed;inset:0;pointer-events:none;z-index:100;opacity:.035;mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")
+  }
+
+  /* ─── NAV ─────────────────────────────────────────────────── */
+  nav.top{position:fixed;top:0;left:0;right:0;z-index:50;padding:20px 32px;display:flex;align-items:center;justify-content:space-between;backdrop-filter:blur(20px);background:color-mix(in oklab, var(--bg) 70%, transparent);border-bottom:1px solid var(--rule);transition:background .3s,border-color .3s}
+  nav.top.shrink{background:color-mix(in oklab, var(--bg) 90%, transparent);border-bottom-color:var(--rule-strong)}
+  .brand{display:flex;align-items:center;gap:12px;font-family:var(--mono);font-size:12px;letter-spacing:.02em;color:var(--ink)}
+  .brand-dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 12px var(--accent);animation:breathe 3s ease-in-out infinite}
+  @keyframes breathe{50%{opacity:.5}}
+  .brand b{font-weight:500}
+  .brand small{color:var(--ink-3);margin-left:4px}
+
+  nav.top ul{list-style:none;display:flex;gap:4px;font-family:var(--mono);font-size:12px}
+  nav.top ul a{color:var(--ink-2);padding:8px 14px;border-radius:100px;display:flex;align-items:center;gap:8px;transition:color .25s,background .25s}
+  nav.top ul a::before{content:"";width:4px;height:4px;border-radius:50%;background:transparent;transition:background .2s}
+  nav.top ul a:hover{color:var(--ink);background:var(--bg-2)}
+  nav.top ul a.active{color:var(--ink);background:var(--bg-2)}
+  nav.top ul a.active::before{background:var(--accent)}
+
+  .nav-tools{display:flex;gap:8px;align-items:center}
+  .cta-nav{font-family:var(--mono);font-size:12px;padding:9px 16px;border-radius:100px;background:var(--accent);color:var(--accent-ink);transition:transform .2s;font-weight:500}
+  .cta-nav:hover{transform:translateY(-1px)}
+  .cta-nav:active{transform:scale(.97)}
+
+  /* ─── HERO ────────────────────────────────────────────────── */
+  .hero{min-height:100dvh;padding:140px 32px 80px;max-width:1400px;margin:0 auto;display:grid;grid-template-columns:1.2fr .9fr;gap:72px;align-items:center;position:relative;background:radial-gradient(72% 58% at 22% 30%, color-mix(in oklab, var(--warm) 13%, transparent) 0%, transparent 62%)}
+  .hero-copy{max-width:680px;justify-self:start}
+
+  .hero-grid-bg{position:absolute;inset:0;background-image:linear-gradient(var(--rule) 1px,transparent 1px),linear-gradient(90deg,var(--rule) 1px,transparent 1px);background-size:80px 80px;opacity:.4;mask-image:radial-gradient(ellipse at center,black 30%,transparent 70%);pointer-events:none}
+
+  .hero-kicker{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.18em;color:var(--accent);display:inline-flex;align-items:center;gap:12px;margin-bottom:32px;padding:6px 14px 6px 10px;border:1px solid var(--rule-strong);border-radius:100px;background:var(--bg-2)}
+  .hero-kicker .pulse{width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 0 var(--accent);animation:pulse 2s var(--ease-out) infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 color-mix(in oklab,var(--accent) 70%,transparent)}70%{box-shadow:0 0 0 8px transparent}100%{box-shadow:0 0 0 0 transparent}}
+
+  h1.hero-title{font-family:var(--serif);font-weight:500;font-size:clamp(72px,9vw,136px);line-height:.92;letter-spacing:-.05em;margin-bottom:28px;text-align:left}
+  h1.hero-title em{font-style:normal;font-weight:300;color:var(--accent)}
+  h1.hero-title .line{display:block;overflow:hidden;padding:.12em 0;margin:-.12em 0;line-height:.9}
+  h1.hero-title .line > span{display:inline-block;transform:translateY(110%);animation:rise 1.1s var(--ease-out) forwards}
+  h1.hero-title .line:nth-child(1) > span{animation-delay:.15s}
+  h1.hero-title .line:nth-child(2) > span{animation-delay:.28s}
+  .hero-role{font-family:var(--serif);font-size:clamp(22px,2.4vw,32px);letter-spacing:-.02em;color:var(--ink-2);margin-bottom:28px;line-height:1.2;font-weight:500;opacity:0;animation:fadeUp 1s var(--ease-out) .55s forwards}
+  .hero-role em{font-style:normal;font-weight:300;color:var(--accent)}
+  @keyframes rise{to{transform:translateY(0)}}
+
+  .hero-lede{font-size:19px;line-height:1.6;color:var(--ink-2);max-width:520px;margin-bottom:28px;opacity:0;animation:fadeUp 1s var(--ease-out) .7s forwards}
+  .hero-lede a{color:var(--ink);border-bottom:1px solid var(--rule-strong);transition:border-color .2s,color .2s}
+  .hero-lede a:hover{border-color:var(--accent);color:var(--accent)}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+
+  .hero-chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:40px;opacity:0;animation:fadeUp 1s var(--ease-out) .9s forwards}
+  .chip{font-family:var(--mono);font-size:11px;padding:7px 13px;border:1px solid var(--rule-strong);border-radius:100px;color:var(--ink-2);letter-spacing:.02em;display:inline-flex;align-items:center;gap:6px;transition:border-color .2s,color .2s}
+  .chip:hover{border-color:var(--accent);color:var(--accent)}
+  .chip::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--ink-3);transition:background .2s}
+  .chip:hover::before{background:var(--accent)}
+
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap;opacity:0;animation:fadeUp 1s var(--ease-out) 1.05s forwards;margin-bottom:28px}
+
+  /* Salient contact row in hero — email is what scholars come for */
+  .hero-contact{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;margin-bottom:44px;opacity:0;animation:fadeUp 1s var(--ease-out) 1.12s forwards}
+  .hero-mail{font-family:var(--mono);font-size:13px;display:inline-flex;align-items:center;gap:9px;padding:12px 18px;border:1px solid var(--rule-strong);border-radius:100px;color:var(--ink);background:var(--bg-2);transition:border-color .2s,color .2s,transform .16s var(--ease-out)}
+  .hero-mail:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
+  .hero-mail svg{width:15px;height:15px;color:var(--accent)}
+  .hero-socials{display:flex;flex-wrap:wrap;gap:8px 16px;font-family:var(--mono);font-size:12px;letter-spacing:.02em}
+  .hero-socials a{color:var(--ink-2);transition:color .2s;border-bottom:1px solid transparent}
+  .hero-socials a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+  .btn{font-family:var(--mono);font-size:13px;padding:14px 22px;border-radius:100px;transition:transform .16s var(--ease-out),background .2s,border-color .2s,color .2s;display:inline-flex;align-items:center;gap:10px;cursor:pointer}
+  .btn-primary{background:var(--ink);color:var(--bg);border:1px solid var(--ink)}
+  .btn-primary:hover{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);transform:translateY(-2px)}
+  .btn-ghost{background:transparent;color:var(--ink);border:1px solid var(--rule-strong)}
+  .btn-ghost:hover{border-color:var(--ink);transform:translateY(-2px)}
+  .btn:active{transform:scale(.97)}
+  .btn svg{width:14px;height:14px}
+
+  .hero-meta{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule-strong);border:1px solid var(--rule-strong);border-radius:2px;opacity:0;animation:fadeUp 1s var(--ease-out) 1.2s forwards;max-width:600px}
+  .hero-meta > div{background:var(--bg);padding:18px 20px}
+  .hero-meta dt{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin-bottom:6px}
+  .hero-meta dd{font-size:14px;color:var(--ink);font-weight:500}
+
+  /* Portrait — moody, square crop with glow */
+  .portrait-wrap{position:relative;opacity:0;animation:fadeUp 1.2s var(--ease-out) .8s forwards;aspect-ratio:4/5;max-width:480px;justify-self:end;width:100%}
+  .portrait{position:absolute;inset:0;overflow:hidden;border-radius:2px;background:#000}
+  .portrait img{width:100%;height:100%;object-fit:cover;object-position:center 40%;filter:contrast(1.05) saturate(.95)}
+  /* Accent frame corners */
+  .portrait-frame{position:absolute;inset:-1px;pointer-events:none}
+  .portrait-frame::before,.portrait-frame::after{content:"";position:absolute;width:28px;height:28px;border:1.5px solid var(--accent)}
+  .portrait-frame::before{top:0;left:0;border-right:none;border-bottom:none}
+  .portrait-frame::after{bottom:0;right:0;border-left:none;border-top:none}
+
+  .portrait-tag{position:absolute;top:-32px;left:0;right:0;display:flex;justify-content:space-between;font-family:var(--mono);font-size:10px;color:var(--ink-3);letter-spacing:.16em;text-transform:uppercase}
+  .portrait-tag b{color:var(--accent);font-weight:500}
+  .portrait-caption{position:absolute;bottom:-32px;left:0;right:0;display:flex;justify-content:space-between;font-family:var(--mono);font-size:10px;color:var(--ink-3);letter-spacing:.14em;text-transform:uppercase}
+
+  .portrait-badge{position:absolute;bottom:16px;left:16px;background:color-mix(in oklab,var(--bg) 75%, transparent);backdrop-filter:blur(10px);padding:10px 14px;border-radius:100px;display:flex;align-items:center;gap:10px;border:1px solid var(--rule-strong);font-family:var(--mono);font-size:11px;letter-spacing:.04em}
+  .portrait-badge .dot{width:6px;height:6px;border-radius:50%;background:var(--accent);animation:breathe 2s ease-in-out infinite}
+
+  /* scroll cue */
+  .scroll-cue{position:absolute;bottom:40px;left:32px;font-family:var(--mono);font-size:10px;color:var(--ink-3);letter-spacing:.18em;text-transform:uppercase;display:flex;align-items:center;gap:12px;opacity:0;animation:fadeUp 1s var(--ease-out) 1.6s forwards}
+  .scroll-cue .line{width:40px;height:1px;background:var(--ink-3);position:relative;overflow:hidden}
+  .scroll-cue .line::after{content:"";position:absolute;inset:0;background:var(--accent);animation:slide 2s infinite}
+  @keyframes slide{0%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
+
+  /* ─── APPROACH (Methods) ─────────────────────────────────── */
+  section{padding:80px 32px;max-width:1400px;margin:0 auto;scroll-margin-top:80px;position:relative}
+  .section-label{display:flex;align-items:center;gap:16px;font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.18em;color:var(--ink-3);margin-bottom:32px}
+  .section-label .line{flex:1;height:1px;background:var(--rule-strong)}
+  h2{font-family:var(--serif);font-weight:500;font-size:clamp(44px,5.5vw,76px);line-height:1.0;letter-spacing:-.03em;margin-bottom:24px;max-width:900px}
+  h2 em{font-style:normal;font-weight:300;color:var(--accent)}
+  .section-intro{font-size:17px;color:var(--ink-2);max-width:640px;margin-bottom:48px;line-height:1.6}
+  h2,.foot-head,.p-title,.method h3{text-wrap:balance}
+  .section-intro,.hero-lede,.p-abstract,.p-hook,.method p{text-wrap:pretty}
+
+  .methods{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--rule-strong);border:1px solid var(--rule-strong);border-radius:2px;overflow:hidden}
+  .method{background:var(--bg);padding:40px 32px;position:relative;transition:background .3s;overflow:hidden}
+  .method:hover{background:var(--bg-2)}
+  .method-icon{width:52px;height:52px;margin-bottom:24px;color:var(--accent)}
+  .method h3{font-family:var(--serif);font-weight:500;font-size:26px;letter-spacing:-.015em;margin-bottom:10px;line-height:1.2}
+  .method h3 em{font-style:normal;font-weight:300;color:var(--accent)}
+  .method p{font-size:14px;line-height:1.65;color:var(--ink-2);max-width:280px}
+  .method-tags{margin-top:20px;display:flex;flex-wrap:wrap;gap:6px}
+  .method-tags span{font-family:var(--mono);font-size:10px;color:var(--ink-3);padding:4px 10px;background:var(--bg-2);border-radius:100px;letter-spacing:.04em}
+  .method:hover .method-tags span{background:var(--bg-3)}
+
+  /* Marquee banner — visual break */
+  .banner{margin:0 -32px;padding:48px 0;border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule-strong);overflow:hidden;white-space:nowrap}
+  .banner-track{display:inline-flex;gap:56px;animation:scroll 60s linear infinite;padding-left:56px;font-family:var(--serif);font-weight:500;font-size:clamp(48px,6vw,84px);letter-spacing:-.03em;line-height:1}
+  .banner-track span{display:inline-flex;align-items:center;gap:56px;color:var(--ink)}
+  .banner-track em{font-style:normal;font-weight:300;color:var(--accent)}
+  .banner-track i{font-style:normal;color:var(--ink-3);font-size:.6em}
+  @keyframes scroll{to{transform:translateX(-50%)}}
+
+  /* ─── RESEARCH ───────────────────────────────────────────── */
+  .research-head{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:end;margin-bottom:56px}
+  .research-stats{display:flex;gap:32px;font-family:var(--mono);font-size:12px;color:var(--ink-3)}
+  .research-stats b{display:block;font-family:var(--serif);font-size:36px;color:var(--accent);letter-spacing:-.02em;line-height:1;margin-bottom:6px}
+
+  .group-sep{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);padding:28px 0 16px;border-bottom:1px solid var(--rule-strong);display:flex;justify-content:space-between;margin-top:24px}
+  .group-sep:first-of-type{margin-top:0}
+  .group-sep .count{color:var(--accent)}
+
+  .paper{border-bottom:1px solid var(--rule);cursor:pointer;transition:background .25s;position:relative}
+  .paper::before{content:"";position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--accent);transform:scaleY(0);transform-origin:top;transition:transform .3s}
+  .paper:hover::before,.paper.open::before{transform:scaleY(1)}
+  .paper.static{cursor:default}
+  .paper.static:hover::before{transform:scaleY(0)}
+
+  .p-head{display:grid;grid-template-columns:60px 1fr 220px 44px;gap:28px;padding:28px 24px;align-items:center;transition:background .2s}
+  .paper:hover .p-head{background:color-mix(in oklab,var(--accent) 4%,transparent)}
+  .p-num{font-family:var(--mono);font-size:12px;color:var(--ink-3);letter-spacing:.06em}
+  .paper:hover .p-num,.paper.open .p-num{color:var(--accent)}
+  .p-title{font-family:var(--serif);font-weight:500;font-size:26px;line-height:1.2;letter-spacing:-.02em;color:var(--ink)}
+  .p-title em{font-style:normal;font-weight:300}
+  .paper:hover .p-title{color:var(--accent)}
+  .p-hook{margin-top:8px;font-size:14px;color:var(--ink-2);max-width:640px;line-height:1.5}
+  .p-meta{text-align:right;display:flex;flex-direction:column;gap:4px;font-family:var(--mono);font-size:11px;letter-spacing:.04em;color:var(--ink-3);text-transform:uppercase}
+  .p-meta .venue{color:var(--ink-2);font-weight:500}
+  .p-meta .year{color:var(--accent);font-size:13px;font-weight:500}
+  .p-toggle{width:36px;height:36px;border:1px solid var(--rule-strong);border-radius:50%;display:grid;place-items:center;color:var(--ink-3);transition:transform .3s,border-color .3s,background .3s,color .3s;justify-self:end}
+  .paper:hover .p-toggle{border-color:var(--accent);color:var(--accent)}
+  .paper.open .p-toggle{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);transform:rotate(45deg)}
+
+  .p-body{display:grid;grid-template-rows:0fr;transition:grid-template-rows .4s var(--ease-out);padding:0 24px 0 112px;cursor:auto}
+  .paper.open .p-body{grid-template-rows:1fr;padding-bottom:32px}
+  .p-body-inner{overflow:hidden;min-height:0}
+  .p-authors{font-size:13px;color:var(--ink-3);margin-bottom:16px;font-style:italic}
+  .p-authors a{color:var(--ink-2);border-bottom:1px dotted var(--ink-3)}
+  .p-abstract{font-size:16px;line-height:1.75;color:var(--ink-2);max-width:820px;margin-bottom:24px}
+  .p-abstract em{color:var(--accent);font-style:italic;font-weight:500}
+  .p-links{display:flex;gap:10px;flex-wrap:wrap}
+  .p-links a{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.1em;padding:9px 16px;border:1px solid var(--rule-strong);color:var(--ink);border-radius:100px;transition:background .2s,border-color .2s,color .2s,transform .2s;display:inline-flex;align-items:center;gap:8px}
+  .p-links a:hover{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);transform:translateY(-1px)}
+
+  /* ─── CV ─────────────────────────────────────────────────── */
+  .cv{display:grid;grid-template-columns:1fr 1fr;gap:72px}
+  .cv-col h3{font-family:var(--serif);font-size:32px;letter-spacing:-.02em;font-weight:500;margin-bottom:36px;display:flex;align-items:baseline;gap:16px}
+  .cv-col h3 em{font-style:normal;font-weight:300;color:var(--accent)}
+  .cv-col h3 .num{font-family:var(--mono);font-size:11px;color:var(--ink-3);letter-spacing:.16em}
+  .cv-item{padding:22px 0;display:grid;grid-template-columns:90px 1fr;gap:24px;border-top:1px solid var(--rule);position:relative;transition:transform .25s var(--ease-out)}
+  .cv-item:hover{transform:translateX(8px)}
+  .cv-item:first-child{border-top-color:var(--rule-strong)}
+  .cv-years{font-family:var(--mono);font-size:12px;color:var(--ink-3);letter-spacing:.04em;padding-top:6px}
+  .cv-role{font-family:var(--serif);font-size:20px;font-weight:500;letter-spacing:-.015em;color:var(--ink);margin-bottom:4px;line-height:1.25}
+  .cv-role em{font-style:normal;font-weight:300;color:var(--accent)}
+  .cv-place{font-size:13px;color:var(--ink-2);line-height:1.5}
+
+  .skills{display:grid;grid-template-columns:1fr 1fr;gap:72px;margin-top:96px;padding-top:64px;border-top:1px solid var(--rule-strong)}
+  .skills h4{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);margin-bottom:20px}
+  .skills h4 b{color:var(--accent);font-weight:500}
+  .pill-row{display:flex;flex-wrap:wrap;gap:6px}
+  .pill{font-family:var(--mono);font-size:11px;padding:9px 14px;border:1px solid var(--rule-strong);border-radius:100px;color:var(--ink-2);transition:border-color .2s,color .2s,transform .2s;letter-spacing:.02em;cursor:default}
+  .pill:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-1px)}
+  .pill .note{opacity:.7;margin-left:6px}
+
+  /* ─── CONTACT / FOOTER ──────────────────────────────────── */
+  footer{border-top:1px solid var(--rule-strong);padding:80px 32px 48px;max-width:1400px;margin:80px auto 0;scroll-margin-top:80px;background:radial-gradient(55% 75% at 82% 6%, color-mix(in oklab, var(--warm) 11%, transparent) 0%, transparent 60%)}
+  .foot-head{font-family:var(--serif);font-size:clamp(30px,4vw,54px);letter-spacing:-.025em;line-height:1.1;margin-bottom:40px;max-width:780px;font-weight:500}
+  .foot-head em{font-style:normal;font-weight:300;color:var(--accent)}
+  .foot-head a{color:var(--ink);border-bottom:2px solid transparent;transition:border-color .2s}
+  .foot-head a:hover{border-color:var(--accent);color:var(--accent)}
+
+  .foot-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--rule-strong);border:1px solid var(--rule-strong);border-radius:2px;overflow:hidden;margin-bottom:56px}
+  .foot-grid > a{background:var(--bg);padding:28px 24px;display:flex;flex-direction:column;gap:10px;transition:background .25s,transform .25s}
+  .foot-grid > a:hover{background:var(--bg-2);transform:translateY(-2px)}
+  .foot-grid .label{font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3)}
+  .foot-grid .value{font-family:var(--serif);font-size:18px;letter-spacing:-.005em;display:flex;align-items:center;gap:10px}
+  .foot-grid .value svg{opacity:0;transform:translateX(-4px);transition:opacity .25s,transform .25s;color:var(--accent)}
+  .foot-grid > a:hover .value svg{opacity:1;transform:translateX(0)}
+
+  .foot-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;padding-top:32px;border-top:1px solid var(--rule);font-family:var(--mono);font-size:11px;color:var(--ink-3);letter-spacing:.08em;text-transform:uppercase}
+  .foot-bottom .dot{width:6px;height:6px;border-radius:50%;background:var(--accent);display:inline-block;margin-right:10px;vertical-align:middle;animation:breathe 3s ease-in-out infinite}
+
+  @media (max-width:960px){
+    nav.top{padding:14px 20px;flex-wrap:wrap}
+    .nav-toggle{display:grid;place-items:center;width:40px;height:40px;border:1px solid var(--rule-strong);border-radius:100px;background:transparent;color:var(--ink);cursor:pointer;transition:border-color .2s,color .2s}
+    .nav-toggle:hover{border-color:var(--accent);color:var(--accent)}
+    .nav-toggle svg{width:18px;height:18px}
+    nav.top ul{display:none;order:3;width:100%;flex-direction:column;gap:2px;margin-top:14px;padding-top:14px;border-top:1px solid var(--rule)}
+    nav.top.menu-open ul{display:flex}
+    nav.top ul a{padding:13px 14px;border-radius:10px}
+    nav.top ul a::before{display:none}
+    .hero{grid-template-columns:1fr;padding:110px 20px 60px;gap:48px}
+    .portrait-wrap{justify-self:stretch;max-width:none}
+    section{padding:56px 20px}
+    .methods{grid-template-columns:1fr}
+    .research-head{grid-template-columns:1fr}
+    .p-head{grid-template-columns:1fr 44px;gap:6px 12px;padding:20px 12px;align-items:start}
+    .p-num{display:none}
+    .p-meta{flex-flow:row wrap;align-items:baseline;gap:4px 12px;text-align:left;grid-column:1;grid-row:2;margin-top:2px}
+    .p-toggle{grid-column:2;grid-row:1}
+    .p-body{padding:0 12px}
+    .paper.open .p-body{padding-bottom:24px}
+    .cv{grid-template-columns:1fr;gap:56px}
+    .skills{grid-template-columns:1fr;gap:40px}
+    .foot-grid{grid-template-columns:1fr 1fr}
+    .hero-meta{grid-template-columns:1fr 1fr}
+    .scroll-cue{display:none}
+  }
+
+  /* Pause marquee on hover so readers can catch the keywords */
+  .banner:hover .banner-track{animation-play-state:paused}
+
+  /* Touch devices fire :hover on tap and it sticks — drop movement hovers */
+  @media (hover:none){
+    .cta-nav:hover,.btn:hover,.chip:hover,.method:hover,.pill:hover,
+    .foot-grid > a:hover,.p-links a:hover{transform:none}
+    .cv-item:hover{transform:none}
+  }
+
+  /* Reduced motion: keep fades/colors, strip movement & looping decoration */
+  @media (prefers-reduced-motion: reduce){
+    *,*::before,*::after{
+      animation-duration:.01ms!important;
+      animation-iteration-count:1!important;
+      transition-duration:.01ms!important;
+      scroll-behavior:auto!important;
+    }
+    .banner-track{animation:none!important;transform:none!important}
+    .scroll-cue .line::after,.brand-dot,.hero-kicker .pulse,
+    .portrait-badge .dot,.foot-bottom .dot{animation:none!important}
+  }
+</style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DFNKM9X8RY"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-DFNKM9X8RY');
+</script></head>
+<body data-theme="dark" data-cc-id="cc-1">
+
+<a href="#home" class="skip-link">Skip to content</a>
+
+<nav class="top">
+  <a href="#home" class="brand"><span class="brand-dot"></span><b>Daniel F. Parra</b><small>· Behavioral &amp; Experimental Economics</small></a>
+  <ul id="nav-menu">
+    <li><a href="#home" class="active">Home</a></li>
+    <li><a href="#approach" class="">Approach</a></li>
+    <li><a href="#research" class="">Research</a></li>
+    <li><a href="#cv" class="">CV</a></li>
+    <li><a href="#contact" class="">Contact</a></li>
+  </ul>
+  <div class="nav-tools">
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+      <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 5h14M2 9h14M2 13h14"></path></svg>
+    </button>
+    <a href="#contact" class="cta-nav">Get in touch →</a>
+  </div>
+</nav>
+
+<section id="home" class="hero">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-copy">
+    <div class="hero-kicker"><span class="pulse"></span>Assistant Professor · PU Javeriana</div>
+    <h1 class="hero-title">
+      <span class="line"><span>Daniel</span></span>
+      <span class="line"><span><em>Parra</em></span></span>
+    </h1>
+    <div class="hero-role">Behavioral &amp; <em>experimental</em> economist</div>
+    <p class="hero-lede">I design <a href="#approach">online &amp; laboratory experiments</a> to measure the quiet choices people make when honesty has a price: lying, corruption, and the institutional conditions that raise or lower its cost.</p>
+    <div class="hero-chips">
+      <span class="chip">Lying &amp; dishonesty</span>
+      <span class="chip">Corruption</span>
+      <span class="chip">Prosociality</span>
+      <span class="chip">Lab &amp; online experiments</span>
+      <span class="chip">Applied microeconomics</span>
+    </div>
+    <div class="hero-actions">
+      <a href="#research" class="btn btn-primary">Read the research
+        <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7h8M8 4l3 3-3 3"></path></svg>
+      </a>
+      <a href="https://danielfparra.github.io/assets/Public_CV_Daniel_Parra_english.pdf" class="btn btn-ghost">Download CV
+        <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 2v8M4 7l3 3 3-3M2 12h10"></path></svg>
+      </a>
+    </div>
+    <div class="hero-contact">
+      <a class="hero-mail" href="mailto:daniel.parra.carreno@gmail.com">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2" y="3" width="12" height="10" rx="1.5"></rect><path d="M2.5 4l5.5 4.5L13.5 4"></path></svg>
+        daniel.parra.carreno@gmail.com
+      </a>
+      <span class="hero-socials">
+        <a href="https://twitter.com/Danielf_Parra">Twitter ↗</a>
+        <a href="https://www.linkedin.com/in/daniel-parra-econ/">LinkedIn ↗</a>
+        <a href="https://www.researchgate.net/profile/Daniel-Parra-9">ResearchGate ↗</a>
+      </span>
+    </div>
+    <dl class="hero-meta">
+      <div><dt>Position</dt><dd>Assistant Professor</dd></div>
+      <div><dt>Institution</dt><dd>PU Javeriana, Bogotá</dd></div>
+      <div><dt>Ph.D.</dt><dd>Berlin School of Economics</dd></div>
+    </dl>
+  </div>
+  <div class="portrait-wrap">
+    <div class="portrait-tag"><span>Plate 01</span><span><b>●</b> On view</span></div>
+    <div class="portrait">
+      <img src="assets/img/bg/dark_pic_hero.png" alt="Portrait of Daniel F. Parra, behavioral and experimental economist, in low light">
+    </div>
+    <div class="portrait-frame"></div>
+    <div class="portrait-badge"><span class="dot"></span>Bogotá · 4.71°N</div>
+    <div class="portrait-caption"><span>Daniel F. Parra</span><span>MMXXVI</span></div>
+  </div>
+  <div class="scroll-cue"><span class="line"></span>Scroll</div>
+</section>
+
+<section id="approach">
+  <div class="section-label">Approach · Methods<span class="line"></span></div>
+  <h2>I run <em>experiments</em> to see what people do when no one's looking.</h2>
+  <p class="section-intro">Behavioral &amp; experimental economics treats dishonesty, prosociality and corruption as decisions with incentives, and measures them under controlled conditions. Two complementary tools do most of the work.</p>
+
+  <div class="methods">
+    <div class="method">
+      <svg class="method-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4">
+        <rect x="6" y="10" width="36" height="28" rx="2"></rect>
+        <path d="M6 16h36M12 13h0.5M15 13h0.5M18 13h0.5"></path>
+        <circle cx="24" cy="26" r="5"></circle>
+        <path d="M21 26l2 2 4-4"></path>
+      </svg>
+      <h3><em>Online</em> experiments</h3>
+      <p>Cheating games, dictator and ultimatum games deployed at scale to measure private decisions without social pressure.</p>
+      <div class="method-tags"><span>oTree</span><span>Prolific</span><span>MTurk</span></div>
+    </div>
+    <div class="method">
+      <svg class="method-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4">
+        <path d="M12 38V16l12-8 12 8v22"></path>
+        <path d="M6 38h36"></path>
+        <rect x="18" y="22" width="5" height="8"></rect>
+        <rect x="25" y="22" width="5" height="8"></rect>
+      </svg>
+      <h3><em>Laboratory</em> studies</h3>
+      <p>Controlled in-person sessions where incentives, information, and observability can be held constant and dialled one at a time.</p>
+      <div class="method-tags"><span>oTree</span><span>WZB Lab</span><span>JaBElab</span></div>
+    </div>
+  </div>
+
+  <div class="banner" aria-hidden="true">
+    <div class="banner-track">
+      <span>Behavioral <i>·</i> <em>experimental</em> <i>·</i> Lying <i>·</i> <em>corruption</em> <i>·</i> Prosociality <i>·</i> <em>ethics</em> <i>·</i> Behavioral <i>·</i> <em>experimental</em> <i>·</i> Lying <i>·</i> <em>corruption</em> <i>·</i> Prosociality <i>·</i> <em>ethics</em> <i>·</i> </span>
+    </div>
+  </div>
+</section>
+
+<section id="research">
+  <div class="section-label">Research<span class="line"></span></div>
+  <div class="research-head">
+    <div>
+      <h2>Papers on lying, corruption &amp; the <em>cost of honesty</em>.</h2>
+      <p class="section-intro">Each paper expands to the full abstract, authorship, and links to the working paper, publication, and press coverage.</p>
+    </div>
+    <div class="research-stats">
+      <div><b>11</b>total works</div>
+      <div><b>06</b>published</div>
+      <div><b>03</b>working papers</div>
+    </div>
+  </div>
+
+  <div class="group-sep"><span>Working Papers</span><span class="count">03</span></div>
+  <article class="paper">
+    <div class="p-head">
+      <span class="p-num">① /01</span>
+      <div>
+        <div class="p-title">The impact of Lying Aversion and Prosocial Lies on Cheating</div>
+        <div class="p-hook">Prosocial motives outweigh lying aversion — but only when your lie <em>helps</em> someone.</div>
+      </div>
+      <div class="p-meta"><span class="year">2024</span><span class="venue">R&amp;R · Experimental Economics</span><span>Lab experiment</span></div>
+      <div class="p-toggle"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 2v8M2 6h8"></path></svg></div>
+    </div>
+    <div class="p-body"><div class="p-body-inner">
+      <p class="p-abstract">This paper examines how prosocial motivations shape lying behavior in a strategic setting where two players privately observe and report a random draw. I develop a theoretical model predicting that individuals will lie less when others can lie on their behalf (<em>strategic substitution</em>), but more when their dishonesty generates positive externalities (<em>prosocial lying</em>). To test these predictions, I design a laboratory experiment using a two-player mind game in which both players benefit if at least one reports a match. Four treatments isolate the roles of strategic avoidance and prosocial incentives. The results show that prosocial motives outweigh lying aversion: participants lie significantly more when their dishonesty benefits others, even when they could avoid lying costs by allowing their partner to lie. These findings suggest that prosocial preferences can substantially offset the psychological costs of lying, <em>but only when individuals’ actions are instrumental in producing gains for others</em>.</p>
+      <div class="p-links">
+        <a href="https://danielfparra.github.io/assets/Infographic_JMP_PARRA.png">Infographic <span>↗</span></a>
+        <a href="https://danielfparra.github.io/assets/JMP_Daniel_Parra.pdf">Download PDF</a>
+      </div>
+      </div>
+    </div>
+  </article>
+
+  <article class="paper">
+    <div class="p-head">
+      <span class="p-num">② /02</span>
+      <div>
+        <div class="p-title">Intentions versus Outcomes: The Effect of Corruption on Tax Evasion</div>
+        <div class="p-hook">Neither the odds nor the intent of corruption is enough to move tax compliance.</div>
+      </div>
+      <div class="p-meta"><span class="year">2025</span><span class="venue">R&amp;R · Public Choice</span><span>Online experiment</span></div>
+      <div class="p-toggle"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 2v8M2 6h8"></path></svg></div>
+    </div>
+    <div class="p-body"><div class="p-body-inner">
+      <p class="p-authors">with Yuliet Verbel</p>
+      <p class="p-abstract">This paper studies the impact of corruption on tax evasion through an experimental study. Participants decide how much of their earned income to report after learning whether there is a high or low probability of being matched with a corrupt public official who misappropriates tax revenues. We find that an environment with a high probability of being matched with a corrupt public official <em>does not significantly increase tax evasion</em> compared to a low-probability environment. To test whether intentions matter, we introduce two additional conditions where the probability of being matched with a corrupt public official remains high or low, but the misappropriation is determined by random assignment rather than an official's deliberate choice. Under these conditions, we find no evidence that the <em>intentionality</em> of corruption affects tax evasion behavior. These results identify the conditions under which neither the probability nor the intentionality of corruption is sufficient to affect compliance: when harm is indirect, beliefs are objective, and there is no strategic interaction between taxpayers and officials. We also find that tax evaders and compliers report differing social norms across all treatments, though whether these differences reflect pre-existing beliefs or post-hoc rationalization remains an open question.</p>
+      </div>
+    </div>
+  </article>
+
+  <article class="paper">
+    <div class="p-head">
+      <span class="p-num">③ /03</span>
+      <div>
+        <div class="p-title">Coding Open-ended Responses with Large Language Models: Evidence from Three Economic Experiments</div>
+        <div class="p-hook">GPT, Claude &amp; Gemini code experimental text reliably — only when categories are explicit.</div>
+      </div>
+      <div class="p-meta"><span class="year">2026</span><span class="venue">SSRN Working Paper</span><span>LLM · methods</span></div>
+      <div class="p-toggle"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 2v8M2 6h8"></path></svg></div>
+    </div>
+    <div class="p-body"><div class="p-body-inner">
+      <p class="p-authors">with Sophia Aristizabal</p>
+      <p class="p-abstract">Can large language models (LLMs) reliably code open-ended responses and free-form communication in experimental economics? We apply three LLMs (GPT, Claude, and Gemini) under alternative prompt designs and temperature settings to data from three published experiments that differ in coding structure, textual ambiguity, and the role of communication. In a trust game targeting explicit commitment language, all three models achieve strong agreement with human benchmarks (Cohen's κ &gt; 0.80) and replicate the finding that promise-making predicts cooperation. In thematic coding of explanations for self- versus peer-reported AI use, LLMs recover the dominant category but <em>over-identify rare inductively derived categories by a factor of three to five</em>. In multi-label coding of coordination-game chat, agreement is weaker and downstream regressions do not replicate consistently, with some coefficients reversing sign. Model choice and temperature are not first-order determinants of performance. The primary constraint is the <em>structural fit between the coding scheme and LLM capabilities</em>: LLMs succeed when categories are deductively defined and explicitly marked in the text, and fail when coding relies on pragmatic inference or inductively derived themes. These findings have direct implications for measurement reliability and analytical transparency in experimental research that uses coded text.</p>
+      <div class="p-links"><a href="https://ssrn.com/abstract=6805398">SSRN <span>↗</span></a></div>
+      </div>
+    </div>
+  </article>
+
+  <div class="group-sep"><span>Publications</span><span class="count">06</span></div>
+
+  <article class="paper">
+    <div class="p-head">
+      <span class="p-num">④ /04</span>
+      <div>
+        <div class="p-title">Academic exam periods and ultra-processed food consumption: evidence from supermarket transactions in a Colombian university</div>
+        <div class="p-hook">Exam stress shows up in students' real supermarket purchases.</div>
+      </div>
+      <div class="p-meta"><span class="year">2026</span><span class="venue">Frontiers in Psychology</span></div>
+      <div class="p-toggle"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 2v8M2 6h8"></path></svg></div>
+    </div>
+    <div class="p-body"><div class="p-body-inner">
+      <p class="p-authors">with Neha Khandpur, Laura Guerrero Sánchez, Juan Carlos Londoño Roldan &amp; Jeremy C. Young</p>
+      <p class="p-abstract">Academic stress can change eating behavior and often leads to higher consumption of unhealthy foods. Using point-of-sale transaction data from a university supermarket in Colombia — objective purchases rather than self-reports — we estimate a difference-in-differences design with students as the treatment group and university staff as the control. During exam weeks, students <em>increase their purchases of ultra-processed foods by 12.9 percent</em> relative to non-exam periods (p &lt; 0.05), while no significant changes appear among non-students. The results provide causal evidence that exam-related stress or time constraints raise demand for ready-to-heat, ultra-processed foods, and reveal clear temporal patterns with relevant implications for campus nutrition policies and stress-management interventions.</p>
+      <div class="p-links"><a href="https://doi.org/10.3389/fpsyg.2025.1726856">Published Paper <span>↗</span></a></div>
+      </div>
+    </div>
+  </article>
+
+  <article class="paper">
+    <div class="p-head">
+      <span class="p-num">⑤ /05</span>
+      <div>
+        <div class="p-title">Eliciting dishonesty in online experiments: observed vs. mind cheating games</div>
+        <div class="p-hook">Making lies unidentifiable at the individual level.</div>
+      </div>
+      <div class="p-meta"><span class="year">2024</span><span class="venue">J. Econ. Psychology</span></div>
+      <div class="p-toggle"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 2v8M2 6h8"></path></svg></div>
+    </div>
+    <div class="p-body"><div class="p-body-inner">
+      <p class="p-abstract">I compare two ways of eliciting cheating behavior in online experiments: an <em>Observed-Cheating Game</em> with on-screen random draws, and a <em>Mind-Cheating Game</em> where participants choose a color in their minds and then randomly draw from ten boxes with question marks. Observed online games are more likely to yield non-significant treatment differences because the effect of observability is particularly strong. Mind games solve the most prominent problems for eliciting lying by making lies unidentifiable at the individual level — and are easily implemented online or in the field.</p>
+      <div class="p-links"><a href="https://www.sciencedirect.com/science/article/pii/S0167487024000230">Published Paper <span>↗</span></a></div>
+      </div>
+    </div>
+  </article>
+
+  <article class="paper">
+    <div class="p-head">
+      <span class="p-num">⑥ /06</span>
+      <div>
+        <div class="p-title">Observability and lying</div>
+        <div class="p-hook">Covered in <i>Psychology Today</i>.</div>
+      </div>
+      <div class="p-meta"><span class="year">2021</span><span class="venue">JEBO</span></div>
+      <div class="p-toggle"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 2v8M2 6h8"></path></svg></div>
+    </div>
+    <div class="p-body"><div class="p-body-inner">
+      <p class="p-authors">with Tilman Fries, Uri Gneezy &amp; Agne Kajackaite</p>
+      <p class="p-abstract">Participants in a cheating game draw a random number and report any number they wish, receiving a monetary payoff based only on the report. We study how reports depend on the observability of both the random draw and the report. Increasing the observability of the random draw <em>decreases cheating</em>; increasing the anonymity of reports does not affect average reports.</p>
+      <div class="p-links">
+        <a href="https://doi.org/10.1016/j.jebo.2021.06.038">Published Paper <span>↗</span></a>
+        <a href="https://www.psychologytoday.com/us/blog/fulfillment-any-age/202110/new-way-expose-liars">Psychology Today</a>
+      </div>
+      </div>
+    </div>
+  </article>
+
+  <article class="paper">
+    <div class="p-head">
+      <span class="p-num">⑦ /07</span>
+      <div>
+        <div class="p-title">Because I (don't) deserve it: Entitlement and lying behavior</div>
+        <div class="p-hook">Deservingness influences lying, in an intuitive direction.</div>
+      </div>
+      <div class="p-meta"><span class="year">2021</span><span class="venue">JEBO</span></div>
+      <div class="p-toggle"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 2v8M2 6h8"></path></svg></div>
+    </div>
+    <div class="p-body"><div class="p-body-inner">
+      <p class="p-authors">with Tilman Fries</p>
+      <p class="p-abstract">We study the effect of entitlement on willingness to lie. A model predicts that individuals who feel more entitled are <em>encouraged</em> to lie while others are discouraged. In a lab experiment, when performance determines income, those who earn less money lie less than those who earn more. We find no differences when endowments are windfall.</p>
+      <div class="p-links">
+        <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3564587">Working Paper</a>
+        <a href="https://www.sciencedirect.com/science/article/abs/pii/S0167268121001013">Published <span>↗</span></a>
+        <a href="https://wzb.eu/en/research/markets-and-choice/insights/insights-by-bse-researchers/how-does-entitlement-affect-honesty">Summary</a>
+      </div>
+      </div>
+    </div>
+  </article>
+
+  <article class="paper">
+    <div class="p-head">
+      <span class="p-num">⑧ /08</span>
+      <div>
+        <div class="p-title">The limits of transparency in reducing corruption</div>
+        <div class="p-hook">Transparency deters embezzlement, not bribery.</div>
+      </div>
+      <div class="p-meta"><span class="year">2021</span><span class="venue">J. Behav. &amp; Exp. Econ.</span></div>
+      <div class="p-toggle"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 2v8M2 6h8"></path></svg></div>
+    </div>
+    <div class="p-body"><div class="p-body-inner">
+      <p class="p-authors">with Manuel Muñoz-Herrera &amp; Luis Palacio</p>
+      <p class="p-abstract">Does transparency — information precision on budget size — deter embezzlement and bribery when they co-occur? Transparency <em>decreases embezzlement</em> but has no significant effect on bribery. Resource managers strategically use uncertainty on the available budget in their favor, acting as if low public investment rates were a consequence of bad luck rather than misappropriation.</p>
+      <div class="p-links">
+        <a href="https://bibliothek.wzb.eu/pdf/2019/ii19-401.pdf">Working Paper</a>
+        <a href="https://doi.org/10.1016/j.socec.2021.101762">Published <span>↗</span></a>
+      </div>
+      </div>
+    </div>
+  </article>
+
+  <article class="paper">
+    <div class="p-head">
+      <span class="p-num">⑨ /09</span>
+      <div>
+        <div class="p-title">The role of suggestions and tips in distorting a third party's decision</div>
+        <div class="p-hook">Tips bias allocation; suggestions can backfire.</div>
+      </div>
+      <div class="p-meta"><span class="year">2020</span><span class="venue">Games</span></div>
+      <div class="p-toggle"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 2v8M2 6h8"></path></svg></div>
+    </div>
+    <div class="p-body"><div class="p-body-inner">
+      <p class="p-abstract">Two players create a joint pie; a third decides how to allocate it. An ex-post monetary gift (tip) <em>increases</em> the value allocated to the player who may tip the decision-maker. Suggestive messages do not have this effect — and can even reduce the value allocated to the sender.</p>
+      <div class="p-links"><a href="https://www.mdpi.com/2073-4336/11/2/23">Published Paper <span>↗</span></a></div>
+      </div>
+    </div>
+  </article>
+
+  <div class="group-sep"><span>Work in Progress</span><span class="count">02</span></div>
+  <article class="paper">
+    <div class="p-head">
+      <span class="p-num">⑩ /10</span>
+      <div>
+        <div class="p-title">Noise annoys: the effect of noise on cognitive performance</div>
+        <div class="p-hook">Human noise hurts memory and mood; machine noise mostly just annoys.</div>
+      </div>
+      <div class="p-meta"><span class="year">2026</span><span class="venue">Finishing first draft</span><span>Lab experiment</span></div>
+      <div class="p-toggle"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 2v8M2 6h8"></path></svg></div>
+    </div>
+    <div class="p-body"><div class="p-body-inner">
+      <p class="p-authors">with Uri Gneezy &amp; Agne Kajackaite</p>
+      <p class="p-abstract">This paper examines the effect of noise on cognitive performance using two controlled laboratory experiments (N = 929). Participants complete memory, counting, and cognitive reflection tasks under three conditions: silence (baseline), human noise (e.g., typing, snacking, phone notifications), and intermittent machine-generated noise (air conditioning). We find that noise reduces performance on memory tasks and negatively affects mood and willingness to participate in future experiments. While both human and machine noise have similar detrimental effects on mood and willingness to participate, <em>human noise has significant negative effects on performance, whereas machine-generated noise has rather marginal effects</em>. These findings suggest that workplace noise may generate previously unanticipated productivity losses, reduce worker satisfaction, and decrease willingness to work in such environments.</p>
+      </div>
+    </div>
+  </article>
+
+  <article class="paper static">
+    <div class="p-head">
+      <span class="p-num">⑪ /11</span>
+      <div>
+        <div class="p-title">Cheap talk and honesty</div>
+        <div class="p-hook">with Tilman Fries · data collected.</div>
+      </div>
+      <div class="p-meta"><span class="year">TBA</span><span class="venue">Data collected</span></div>
+      <div class="p-toggle" style="opacity:.35"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="6" cy="6" r="3"></circle></svg></div>
+    </div>
+  </article>
+
+</section>
+
+<section id="cv">
+  <div class="section-label">Curriculum Vitae<span class="line"></span></div>
+  <h2>A brief <em>record</em>.</h2>
+  <p class="section-intro">Tracing a line from Bucaramanga through Lyon and Berlin to Bogotá.</p>
+
+  <div class="cv">
+    <div class="cv-col">
+      <h3><em>Education</em><span class="num">03 entries</span></h3>
+      <div class="cv-item">
+        <div class="cv-years">2017–2022</div>
+        <div>
+          <div class="cv-role"><em>Ph.D.</em> Berlin School of Economics</div>
+          <div class="cv-place">Dr. rer. oec. · HU Berlin, FU Berlin, TU Berlin, WZB, ESMT, Hertie School &amp; U. Potsdam · Berlin, Germany.</div>
+        </div>
+      </div>
+      <div class="cv-item">
+        <div class="cv-years">2013–2014</div>
+        <div>
+          <div class="cv-role"><em>M.A.</em> Game theory, experimental economics &amp; applied econometrics</div>
+          <div class="cv-place">GATE–LSE · Université Lumière Lyon 2 · Lyon, France.</div>
+        </div>
+      </div>
+      <div class="cv-item">
+        <div class="cv-years">2007–2011</div>
+        <div>
+          <div class="cv-role"><em>B.A.</em> Economics</div>
+          <div class="cv-place">Industrial University of Santander · Bucaramanga, Colombia.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cv-col">
+      <h3><em>Experience</em><span class="num">06 entries</span></h3>
+      <div class="cv-item"><div class="cv-years">2022–</div><div><div class="cv-role">Assistant Professor</div><div class="cv-place">Pontificia Universidad Javeriana · Bogotá</div></div></div>
+      <div class="cv-item"><div class="cv-years">2017–22</div><div><div class="cv-role">Research Fellow</div><div class="cv-place">Berlin Social Science Center (WZB)</div></div></div>
+      <div class="cv-item"><div class="cv-years">2015–17</div><div><div class="cv-role">Researcher &amp; Lecturer</div><div class="cv-place">Catholic University of Colombia</div></div></div>
+      <div class="cv-item"><div class="cv-years">2015–16</div><div><div class="cv-role">Adjunct Lecturer</div><div class="cv-place">U. Bogotá Jorge Tadeo Lozano</div></div></div>
+      <div class="cv-item"><div class="cv-years">2011–14</div><div><div class="cv-role">Researcher</div><div class="cv-place">EMAR Research Group · Industrial U. of Santander</div></div></div>
+      <div class="cv-item"><div class="cv-years">2010–11</div><div><div class="cv-role">Research Assistant</div><div class="cv-place">Industrial University of Santander</div></div></div>
+    </div>
+  </div>
+
+  <div class="skills">
+    <div>
+      <h4><b>—</b> Languages</h4>
+      <div class="pill-row">
+        <span class="pill">Spanish<span class="note">native</span></span>
+        <span class="pill">English<span class="note">fluent</span></span>
+        <span class="pill">French<span class="note">B2</span></span>
+        <span class="pill">German<span class="note">A2</span></span>
+      </div>
+    </div>
+    <div>
+      <h4><b>—</b> Tools &amp; methods</h4>
+      <div class="pill-row">
+        <span class="pill">Python</span>
+        <span class="pill">R</span>
+        <span class="pill">Stata</span>
+        <span class="pill">LaTeX</span>
+        <span class="pill">oTree</span>
+        <span class="pill">z-Tree</span>
+        <span class="pill">HTML / CSS</span>
+        <span class="pill">Bootstrap</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="section-label">Contact<span class="line"></span></div>
+  <h2 class="foot-head">Open to <em>collaboration</em>, invited talks and student inquiries. Reach out at <a href="mailto:daniel.parra.carreno@gmail.com">daniel.parra.carreno<em>@</em>gmail.com</a>.</h2>
+
+  <div class="foot-grid">
+    <a href="mailto:daniel.parra.carreno@gmail.com">
+      <span class="label">Email</span>
+      <span class="value">daniel.parra.carreno@gmail.com<svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l6-6M4 3h5v5"></path></svg></span>
+    </a>
+    <a href="https://twitter.com/Danielf_Parra">
+      <span class="label">Twitter</span>
+      <span class="value">@Danielf_Parra<svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l6-6M4 3h5v5"></path></svg></span>
+    </a>
+    <a href="https://www.linkedin.com/in/daniel-parra-econ/">
+      <span class="label">LinkedIn</span>
+      <span class="value">daniel-parra-econ<svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l6-6M4 3h5v5"></path></svg></span>
+    </a>
+    <a href="https://www.researchgate.net/profile/Daniel-Parra-9">
+      <span class="label">ResearchGate</span>
+      <span class="value">Daniel-Parra-9<svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l6-6M4 3h5v5"></path></svg></span>
+    </a>
+  </div>
+
+  <div class="foot-bottom">
+    <span><span class="dot"></span>© MMXXVI Daniel F. Parra · Bogotá</span>
+  </div>
+</footer>
+
+<script>
+  // Expandable papers: make the head a keyboard-operable toggle (Enter/Space),
+  // expose state to assistive tech, and keep body clicks (links) from toggling.
+  document.querySelectorAll('.paper:not(.static)').forEach((article, i)=>{
+    const head = article.querySelector('.p-head');
+    const body = article.querySelector('.p-body');
+    if(!head) return;
+    if(body && !body.id){ body.id = 'paper-body-' + (i + 1); head.setAttribute('aria-controls', body.id); }
+    head.setAttribute('role','button');
+    head.setAttribute('tabindex','0');
+    head.setAttribute('aria-expanded','false');
+    const toggle = ()=>{
+      const open = !article.classList.contains('open');
+      article.classList.toggle('open', open);
+      head.setAttribute('aria-expanded', open ? 'true' : 'false');
+    };
+    head.addEventListener('click', toggle);
+    head.addEventListener('keydown', e=>{
+      if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); toggle(); }
+    });
+  });
+
+  // shrink nav on scroll — rAF-throttled, passive (one class toggle per frame max)
+  const navEl = document.querySelector('nav.top');
+  let navTicking = false;
+  window.addEventListener('scroll', ()=>{
+    if(navTicking) return;
+    navTicking = true;
+    requestAnimationFrame(()=>{
+      navEl.classList.toggle('shrink', window.scrollY > 40);
+      navTicking = false;
+    });
+  }, {passive:true});
+
+  // scroll-spy
+  const links = document.querySelectorAll('nav.top ul a');
+  const ids = ['home','approach','research','cv','contact'];
+  const sections = ids.map(id=>document.getElementById(id)).filter(Boolean);
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){
+        links.forEach(l=>l.classList.toggle('active', l.getAttribute('href')==='#'+e.target.id));
+      }
+    });
+  },{rootMargin:'-40% 0px -55% 0px'});
+  sections.forEach(s=>io.observe(s));
+
+  // smooth anchor
+  document.querySelectorAll('a[href^="#"]').forEach(a=>{
+    a.addEventListener('click', e=>{
+      const id = a.getAttribute('href').slice(1);
+      const el = document.getElementById(id);
+      if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth',block:'start'}); history.replaceState(null,'','#'+id); }
+    });
+  });
+
+  // Mobile menu: toggle the nav panel, sync aria, close on selection / desktop resize
+  const navToggle = document.querySelector('.nav-toggle');
+  const closeMenu = ()=>{ navEl.classList.remove('menu-open'); if(navToggle) navToggle.setAttribute('aria-expanded','false'); };
+  if(navToggle){
+    navToggle.addEventListener('click', ()=>{
+      const open = navEl.classList.toggle('menu-open');
+      navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      navToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    });
+  }
+  document.querySelectorAll('#nav-menu a').forEach(a=> a.addEventListener('click', closeMenu));
+  window.addEventListener('resize', ()=>{ if(window.innerWidth > 960) closeMenu(); });
+
+  // Off-site links open in a new tab without leaking the opener
+  document.querySelectorAll('a[href^="http"]').forEach(a=>{ a.target = '_blank'; a.rel = 'noopener noreferrer'; });
+
+  // Esc closes the mobile menu or an open paper, returning focus to its control
+  document.addEventListener('keydown', e=>{
+    if(e.key !== 'Escape') return;
+    if(navEl.classList.contains('menu-open')){ closeMenu(); if(navToggle) navToggle.focus(); return; }
+    const open = document.querySelector('.paper.open');
+    if(open){
+      open.classList.remove('open');
+      const head = open.querySelector('.p-head');
+      if(head){ head.setAttribute('aria-expanded','false'); head.focus(); }
+    }
+  });
 </script>
 
-</head>
 
-<!--<body class="dark" data-spy="scroll" data-target="#scrollspy" data-offset="1">-->
+</body></html>
 
-<body data-spy="scroll" data-target="#scrollspy" data-offset="1">
-
-    <!--menu toggle-->
-    <div class="menu-toggle" id="menuToggle">
-        <span></span>
-    </div>
-    
-    <!--header-left-->
-    <div class="header-left dark" id="scrollspy">
-        <!--logo-->
-        <div class="logo">
-            <a href="index.html" class="mb-0">
-                <img src="assets/img/logo.png" alt="Daniel Parra econ">
-            </a>
-        </div>
-
-        <!--menu-->
-        <div class="main-menu" id="js-menu">
-           <div class="cross bg-base-color">
-                <span><i class="fas fa-times text-white"></i></span>
-           </div>
-            <nav class="menu">
-                <ul class="menu-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#research">Research </a>
-                    </li>
-        
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        
-        <!--btn-share-->
-        <div class="btn-share">
-            <span class="social_share text-dark"></span>
-        </div>   
-
-    </div>
-
-
-
-
-    <!--main-->
-    <div class="main">
-        <!--Home -->
-        <section class="home bg-light vh-70" id="home" style="background-image: url('assets/img/bg/bg-1-new.webp')">
-            <div class="container-fluid">
-                <div class="row ">
-                    <div class="col-lg-12 ">
-                        <!--social-media-->
-                        <div class="social-home">
-                            <ul class="list-inline social">
-                                <li>
-                                    <a href="https://twitter.com/intent/follow?original_referer=https%3A%2F%2F1765226694-atari-embeds.googleusercontent.com%2F&ref_src=twsrc%5Etfw&screen_name=Danielf_Parra&tw_p=followbutton" target="_blank">
-                                        <img src="assets/img/twitter-b.webp" alt="twitter" title="twitter">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.researchgate.net/profile/Daniel-Parra-9" target="_blank">
-                                        <img src="assets/img/researchgate-b.webp" alt="researchgate" title="researchgate">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.linkedin.com/in/daniel-parra-econ/" target="_blank">
-                                        <img src="assets/img/likedin-b.webp" alt="likedin" title="likedin">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="mailto:daniel.parra@wzb.eu" target="_blank">
-                                        <img src="assets/img/email-b.webp" alt="email" title="email">
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="d-flex align-items-center min-vh-100 vw-100">
-                            <div class="full-width">
-                                <div class="banner">
-<!--                                    <h6><span>👋</span>Hey, I'm a Daniel Parra</h6>-->
-                                    <h1 class="cd-headline clip">
-                                        <span class="cd-words-wrapper ">
-                                            <b class="is-visible">Welcome to my homepage!</b>
-                                            <b>I am Daniel Parra</b>
-                                        </span>
-                                    </h1>
-                                    <p class="max-width-600 mt-20 mb-30" style="font-size:18px">
-                                        I am an Assistant Professor at the Department of Business Administration,
-                                        Pontificia Universidad Javeriana. I obtained my Ph.D. at </a>
-                                        the <a class="link" href="https://berlinschoolofeconomics.de/home" target="_blank">Berlin School of
-                                        Economics</a>.
-                                    <br>
-                                        My research focuses on people's dishonesty. I am particularly interested in
-                                        understanding the willingness to lie and be corrupt/act corruptly. In my research,
-                                        I have mainly used online and lab experiments.
-                                    </p>
-
-
-                                </div>
-                                <a href="https://twitter.com/intent/follow?original_referer=https%3A%2F%2F1765226694-atari-embeds.googleusercontent.com%2F&ref_src=twsrc%5Etfw&screen_name=Danielf_Parra&tw_p=followbutton" class="btn-custom twitter-btn" target="_blank">
-                                <span><i class="fab fa-twitter"></i></span>
-                                <span>@Danielf_Parra</span>
-                            </a>
-
-
-                                                   <!--my-info-->
-                        <div class="my-info">
-                            <div class="item">
-                                <p class="font-w-700 mb-0"><i class="fas fa-envelope"></i> Email</p>
-                                <p class="mb-0"><a href="mailto:daniel.parra.carreno@gmail.com">daniel.parra.carreno[at]gmail[dot]com</a></p>
-                            </div>
-                            <div class="item">
-                                <p class="font-w-700  mb-0"><i class="fas fa-map-marked-alt"></i> Location</p>
-                                <p class="mb-0">Bogotá, Colombia</p>
-                            </div>
-                            <div class="item">
-                                <p class="font-w-700 mb-0"><i class="fas fa-globe-americas"></i> Nationality</p>
-                                <p class="mb-0">Colombian</p>
-                            </div>
-                           <!-- <div class="item">
-                                <p class="font-w-700 mb-0"><i class="fas fa-phone-volume"></i> Phone</p>
-                                <p class="mb-0">+49 30 25491 443</p>
-                            </div>-->
-                        </div>
-                     </div> 
-                </div>
-            </div>
-        </section>
-
-
-
-                <!-- Research -->
-        <section id="research" class="section services">
-            <div class="container-fluid">
-                <div class="row mb-30">
-                        <div class="section-title">
-                            <h2 class="mb-0">Research</h2>
-                            <p class="text-muted mb-0">published and unpublished papers</p>
-                    </div>
-                </div>
-
-                <div class="accordion-box mt-20 mb-20">
-                    <!--Block-->
-                    <div class="collapse-title"><h4 class="mb-0">Working Papers</h4></div>
-                    <!--Block-->
-                    <div class="accordion block <!-- active-block -->" id="accordionJMP">
-                        <div class="acc-btn collapsed"  id="headingJMP" data-toggle="collapse" data-target="#collapseJMP" aria-expanded="true" aria-controls="collapseJMP">
-                            <h5>The impact of lying aversion and prosociality on cheating</h5> <i style="color:#808080">  People prefer not to lie, but benefiting others makes it easier.</i>
-                        </div>
-                    <div id="collapseJMP" class="collapse" aria-labelledby="headingJMP" data-parent="#accordionJMP">
-                            <div class="content">
-                                <a class="btn btn-dark py-2" href="https://danielfparra.github.io/assets/Infographic_JMP_PARRA.png" role="button" target="_blank">
-                            <span><i class="far fa-newspaper"></i></span> <span>Infographics</span></a>
-                        <a class="btn btn-outline-success" href="https://danielfparra.github.io/assets/JMP_Daniel_Parra.pdf" role="button" target="_blank">
-                            <span><i class="fas fa-file-download"></i></span> <span>Download This Paper</span></a>                                <h6 class="mt-15 mb-10">Abstract</h6>
-                                <p class="mb-0" align="justify">
-                                    In some situations, when an agent faces the decision of whether to lie or not,
-                                    their decision only affects the agent themselves. However, in other situations,
-                                    lying can also benefit third parties as well as the liar.
-                                    In these latter situations, there is a trade-off between the disutility of
-                                    being a liar and the utility of a prosocial lie. This paper studies the
-                                    interaction of two behavioral traits that are well established in the
-                                    behavioral economics literature: the aversion to lying and prosociality.
-                                    I first present a model that incorporates heterogeneous lying costs and
-                                    prosociality as a part of the individual’s preferences.
-                                    I show that individuals are more likely to lie when they have prosocial
-                                    motives in addition to their self-interested motives. Using online experiments,
-                                    I show that participants are more dishonest when their lies benefit others and
-                                    themselves. More importantly, I present evidence that, on average,
-                                    the prosocial motive facilitates lying even for people with relatively high
-                                    lying costs.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="accordion-box mt-20 mb-20">
-                    <!--Block-->
-                    <div class="collapse-title"><h4 class="mb-0">Publications</h4></div>
-
-                             <!--Block-->
-                                      <div class="accordion block" id="accordionJoEP1">
-                        <div class="acc-btn collapsed"  id="headingJoEP1" data-toggle="collapse" data-target="#collapseJoEP1" aria-expanded="true" aria-controls="collapseJoEP1">
-                            <h5>Eliciting dishonesty in online experiments: The observed vs. mind cheating game</h5>
-                            <i>Journal of Economic Psychology</i>. 2024.
-                        </div>
-                        <div id="collapseJoEP1" class="collapse" aria-labelledby="headingJoEP1" data-parent="#accordionJoEP1">
-                            <div class="content">
-                                <a class="btn btn-outline-success" href="https://www.sciencedirect.com/science/article/pii/S0167487024000230" role="button" target="_blank">Published Paper</a>
-                                <h6 class="mt-15 mb-10">Abstract</h6>
-                                <p class="mb-0" align="justify">
-                                    In this paper, I compare two ways of eliciting cheating behavior in online experiments.
-                                    I present data from two online experiments, one in which participants’ random drawing took
-                                    place directly on their screens (Observed-Cheating Game) and another in which participants chose
-                                    a color in their minds and then randomly drew a color from ten boxes with question marks presented
-                                    on their screens (Mind-Cheating Game). The paper shows that observed online games are more
-                                    likely to have non-significant treatment differences because the effect of observability is
-                                    particularly strong. I show that using mind games to generate random draws in online settings
-                                    solves the most prominent problems for eliciting lying by making the lies unidentifiable at the
-                                    individual level. The Mind-Cheating Game used in the experiment is inspired by previous mind games
-                                    and is specifically adapted to be easily implemented in online or field experiments.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div class="accordion block" id="accordionJEBO2">
-                        <div class="acc-btn collapsed"  id="headingJEBO2" data-toggle="collapse" data-target="#collapseJEBO2" aria-expanded="true" aria-controls="collapseJEBO2">
-                            <h5> Observability and lying</h5>
-                            With <a class="link" href="https://tilmanfries.github.io/" target="_blank">Tilman Fries</a>,
-                            <a class="link" href="https://rady.ucsd.edu/people/faculty/gneezy/" target="_blank">Uri Gneezy</a>, and
-                            <a class="link" href="https://sites.google.com/site/agnekajackaite/" target="_blank"> Agne Kajackaite</a>.
-                            <i>Journal of Economic Behavior &amp; Organization</i>. 2021.
-                            <p> <i><b>Media coverage:</b></i> <a class="link" href="https://www.psychologytoday.com/us/blog/fulfillment-any-age/202110/new-way-expose-liars" target="_blank">Psychology Today</a>.</p>
-                        </div>
-                        <div id="collapseJEBO2" class="collapse" aria-labelledby="headingJEBO2" data-parent="#accordionJEBO2">
-                            <div class="content ">
-                                <a class="btn btn-outline-success" href="https://doi.org/10.1016/j.jebo.2021.06.038" role="button" target="_blank">Published Paper</a>
-
-                                <h6 class="mt-15 mb-10">Abstract</h6>
-                                <p class="mb-0" align="justify">
-                            Experimental participants in a cheating game draw a random number and then report any number they wish,
-                            receiving a monetary payoff based only on the report. We study how these reports depend on the level of
-                            observability of both the random draw and the report by the experimenter. Our results show that whereas
-                            increasing the observability of the random draw decreases cheating, increasing the anonymity of the reports
-                            does not affect average reports.
-                                </p>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Block-->
-                    <div class="accordion block" id="accordionJEBO1">
-                        <div class="acc-btn collapsed"  id="headingJEBO1" data-toggle="collapse" data-target="#collapseJEBO1" aria-expanded="true" aria-controls="collapseJEBO1">
-                            <h5>Because I (don't) deserve it: Entitlement and lying behavior</h5>
-                            With <a class="link" href="https://tilmanfries.github.io/" target="_blank">Tilman Fries</a>.
-                            <i>Journal of Economic Behavior &amp; Organization</i>. 2021.
-                        </div>
-                        <div id="collapseJEBO1" class="collapse" aria-labelledby="headingJEBO1" data-parent="#accordionJEBO1">
-                            <div class="content">
-                                <a class="btn btn-outline-success" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3564587" role="button" target="_blank">Working Paper</a>
-                                <a class="btn btn-outline-success" href="https://www.sciencedirect.com/science/article/abs/pii/S0167268121001013" role="button" target="_blank">Published Paper</a>
-                                <a class="btn btn-outline-success" href="https://wzb.eu/en/research/markets-and-choice/insights/insights-by-bse-researchers/how-does-entitlement-affect-honesty" role="button" target="_blank">Short Summary</a>
-                                <h6 class="mt-15 mb-10">Abstract</h6>
-                                <p class="mb-0" align="justify">
-                                    We study the effect of entitlement on the willingness to lie.
-                                    We set up a model of lying where individuals feel more or less entitled to their
-                                    endowment depending on how they earned it. When given the opportunity to lie to keep
-                                    their endowment, individuals who feel more entitled are encouraged to lie while others
-                                    are discouraged. To test the model predictions we use a laboratory experiment where we
-                                    compare the lying behavior of participants endowed with a high endowment and participants
-                                    endowed with a low endowment. In one treatment, the allocation of the endowment is decided
-                                    by participants’ performance, and in the other, it is determined by a random draw.
-                                    Our study shows that deservingness influences lying in an intuitive direction: when
-                                    participants performance determines income, those who earn less money lie less than
-                                    those who earn more. We do not find differences in lying when participants perform the
-                                    same task but lie to keep windfall endowments.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                      <div class="accordion block" id="accordionTransparency">
-                        <div class="acc-btn collapsed"  id="headingTransparency" data-toggle="collapse" data-target="#collapseTransparency" aria-expanded="true" aria-controls="collapseTransparency">
-                            <h5>The limits of transparency in reducing corruption</h5>
-                            With <a class="link" href="http://www.manumunoz.me/" target="_blank">Manuel Muñoz-Herrera</a>
-                             and Luis Palacio. <i> Journal of Behavioral and Experimental Economics</i>. 2021.
-                        </div>
-                        <div id="collapseTransparency" class="collapse" aria-labelledby="headingTransparency" data-parent="#accordionTransparency">
-                            <div class="content ">
-                                <a class="btn btn-outline-success" href="https://bibliothek.wzb.eu/pdf/2019/ii19-401.pdf" role="button" target="_blank">Working Paper</a>
-                                <a class="btn btn-outline-success" href="https://doi.org/10.1016/j.socec.2021.101762" role="button" target="_blank">Published Paper</a>
-                                <h6 class="mt-15 mb-10">Abstract</h6>
-                                <p class="mb-0" align="justify">
-                                    Does transparency, understood as information precision on budget size, deter
-                                    embezzlement and bribery when they co-occur? We use a laboratory experiment to study
-                                    the impact of transparency on reducing corruption in these contexts.
-                                    Our results show that transparency decreases embezzlement while it has no
-                                    significant effect on bribery. One potential explanation of the observed
-                                    differential impact of transparency is that resource managers are strategically
-                                    using the uncertainty on the available budget in their favor. In the experiment,
-                                    participants in the resource manager role act as if low public investment rates
-                                    were a consequence of bad luck (low budget) instead of misappropriation.
-                                    Specifically, embezzlement decreases with high transparency, while bribes remain
-                                    unaffected. This result suggests that the impact of transparency is not similar on
-                                    all types of corruption when different types co-occur.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Block-->
-                    <div class="accordion block <!-- active-block -->" id="accordionGames">
-                        <div class="acc-btn collapsed"  id="headingGames" data-toggle="collapse" data-target="#collapseGames" aria-expanded="true" aria-controls="collapseGames">
-                            <h5>The role of suggestions and tips in distorting a third party's decision</h5>
-                            <i>Games</i>. March 2020.
-                        </div>
-                        <div id="collapseGames" class="collapse" aria-labelledby="headingGames" data-parent="#accordionGames">
-                            <div class="content">
-                                <a class="btn btn-outline-success" href="https://www.mdpi.com/2073-4336/11/2/23" role="button" target="_blank">Published Paper</a>
-                                <h6 class="mt-15 mb-10">Abstract</h6>
-                                <p class="mb-0" align="justify">
-                                    I analyze the impact of suggestive advice messages and tipping on a third party’s
-                                    judgment. The experimental design is based on a model with three players,
-                                    wherein two players create, by an investment of resources and effort, a joint pie,
-                                    and the third player must decide how much of the pie to allocate to each of the
-                                    first two players. To assess the impact of suggestive messages and tips,
-                                    I use a baseline treatment in which there is no way of influencing the decision-maker.
-                                    Thus, if the treatments’ manipulations are unable to bias decision-makers,
-                                    their decisions should be the same as those made under the baseline conditions.
-                                    The main finding is that the possibility of an ex-post monetary gift (tip) increases
-                                    the value allocated to a player who may tip the decision-maker in comparison with a
-                                    context-free of influence. Conversely, suggestive messages do not have this effect,
-                                    and can even reduce the value allocated to the sender.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="collapse-title"><h4 class="mb-0">Work in progress</h4></div>
-
-                        <div> <p></p></div>
-
-                    <div class="accordion" id="accordionTax">
-                    <div class="acc-btn-nocontent">
-                        <h5>The effect of corruption on tax evasion</h5>
-                        with <a class="link" href="https://sites.google.com/view/yuliet-verbel" target="_blank">Yuliet Verbel</a>. Design phase.
-                        </div>
-                    </div>
-
-        <!-- About -->
-        <section id="about" class="section about">
-            <div class="container-fluid">
-                <div class="row mb-50 pt-30">
-                    <div class="col-md-12">
-                        <div class="section-title">
-                        <h2 class="mb-0">Curriculum Vitae</h2>
-                        <p class="text-muted mb-0">More information about me.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row mb-20">
-                    <div class="col-lg-6">
-                         <a href="assets/Public_CV_Daniel_Parra_english.pdf" target="_blank" class="btn-custom" download>
-                                <span><i class="fas fa-download"></i></span>
-                                    <span>Download CV</span> </a>
-                    </div></div>
-                <!--Hero & info-->
- <!--               <div class="row mb-50">
-                    <div class="col-lg-5">
-                        <div class="hero">
-                            <img src="assets/img/bg/bg-1.webp" alt="Hey, I'm a Daniel Parra">
-                        </div>
-                    </div>
-               
-                     <div class="col-lg-7 d-flex align-items-center">
-                        <div class="details">
-                            <h5>Hello, I'm a Daniel Parra</h5>
-                            <p class="mb-25">
-                            I am a Berlin School of Economics Ph.D. candidate,
-                            and a research fellow at the Junior Research Group "Ethics and Behavioral Economics"
-                            at the WZB Berlin Social Science Center.</p>
-                       
-                            &lt;!&ndash;about info&ndash;&gt;
-                            <ul class="info mb-5 list-inline">
-                                <li><span>Name :</span> Daniel Parra</li>
-                                <li><span>Email :</span><a href="mailto:daniel.parra@wzb.eu  ">daniel.parra@wzb.eu  </a></li>
-                                <li><span>Nationality :</span> Colombian</li>
-                                &lt;!&ndash; <li><span>Work Status :</span> Berlin Social Science Center (WZB)</li>
-                                <li><span>Freelancer :</span> Available</li> &ndash;&gt;
-                            </ul>
-                            <a href="assets/Public_CV_Daniel_Parra_english.pdf" target="_blank" class="btn-custom" download>
-                                <span><i class="fas fa-download"></i></span>
-                                <span>Download CV</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>-->
-                <!--Features-->
-   <!--             <div class="row features mb-20">
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="item">
-                            <div class="icon mb-10"><i class="fas fa-user"></i></div>
-                            <p class="mb-0">129 Projects Complate</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="item">
-                            <div class="icon mb-10">
-                                <i class="fas fa-smile"></i>
-                            </div>
-                            <p class="mb-0">400 Satisfied Clients</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="item">
-                            <div class="icon mb-10">
-                                <i class="fas fa-certificate"></i>
-                            </div>
-                            <p class="mb-0">8 Years job experience</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="item">
-                            <div class="icon mb-10">
-                                <i class="fas fa-medal"></i>
-                            </div>
-                            <p class=" mb-0">+15 awards won</p>
-                        </div>
-                    </div>
-
-                </div>-->
-                <!-- Timeline-->
-                <div class="row">
-                    <div class="col-lg-6">
-                        <!--Timeline--> 
-                        <h4 class="mb-30">Education</h4>
-                        <div class="timeline">
-                     
-                            <!--item 1-->
-                            <div class="item">
-                                <div class="content">
-                                    <h6 class="mb-0">Ph.D. Berlin School of Economics. </h6>
-                                    <large class="text-muted">Dr. rer. oec.</large>
-                                    <large class="text-muted">2017-2022</large>
-                                    <p class="pt-15 mb-0">Humboldt-University, the Free University,
-                                        the Technical University, WZB, ESMT, Hertie School,
-                                        and University of Postdam. Berlin, Germany.</p>
-                                </div>
-                            </div>
-                              
-
-                       <!--item 2-->
-                            <div class="item">
-                                <div class="content">
-                                    <h6 class="mb-0">M.A. game theory, experimental
-                                        economics and applied econometrics.
-                                        <span class="text-muted"> </span> </h6>
-                                    <large class="text-muted">2013 – 2014</large>
-                                    <p class="pt-15 mb-0">GATE-LSE - Université Lumière Lyon 2. Lyon, France.</p>
-                                </div>
-                            </div>
-                            <!--item 3-->
-                            <div class="item">
-                                <div class="content">
-                                    <h6 class="mb-0">B.A. Economics
-                                        <span class="text-muted">  </span> </h6>
-                                    <large class="text-muted">2007 – 2011</large>
-                                    <p class="pt-15 mb-0">Industrial University of Santander, Bucaramanga, Colombia</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <h4 class="mb-30">Experience</h4>
-                        <div class="timeline">
-                            <!--item 0-->
-                            <div class="item">
-                                <div class="content">
-                                    <h6 class="mb-0"> Pontificia Universidad Javeriana
-                                        <span class="text-muted"> - </span> Bogotá</h6>
-                                    <large class="text-muted">2022 -Current</large>
-                                    <p class="pt-15 mb-0">Assistant Professor
-                                    </p>
-                                </div>
-                            </div>
-                            <!--item 1-->
-                            <div class="item">
-                                <div class="content">
-                                    <h6 class="mb-0"> Berlin Social Science Center (WZB)
-                                        <span class="text-muted"> - </span> Berlin</h6>
-                                    <large class="text-muted">2017 - 2022</large>
-                                    <p class="pt-15 mb-0">Research Fellow
-                                    </p>
-                                </div>
-                            </div>
-                            <!--item 2-->
-                            <div class="item">
-                                <div class="content">
-                                    <h6 class="mb-0"> Catholic University of Colombia
-                                        <span class="text-muted"> - </span> Colombia</h6>
-                                    <large class="text-muted ">2015 – 2017</large>
-                                    <p class="pt-15 mb-0">Researcher and Lecturer</p>
-                                </div>
-                            </div>
-            
-                            <!--item 3-->
-                            <div class="item">
-                                <div class="content">
-                                    <h6 class="mb-0"> University of Bogota Jorge Tadeo Lozano
-                                        <span class="text-muted"> - </span> Colombia</h6>
-                                    <large class="text-muted">2015 – 2016 </large>
-                                    <p class=" pt-15 mb-0">Adjunct lecturer.</p>
-                                </div>
-                            </div>
-            
-                            <!--item 3-->
-                            <div class="item">
-                                <div class="content">
-                                    <h6 class="mb-0">Research group EMAR - Industrial University of Santander
-                                        <span class="text-muted"> - </span> Colombia </h6>
-                                    <large class="text-muted">2011 – 2014 </large>
-                                    <p class=" pt-15 mb-0">Researcher</p>
-                                </div>
-                            </div>
-            
-                            <!--item 3-->
-                            <div class="item">
-                                <div class="content">
-                                    <h6 class="mb-0">Industrial University of Santander
-                                        <span class="text-muted"> - </span> Colombia</h6>
-                                    <large class="text-muted">2010 – 2011 </large>
-                                    <p class=" pt-15 mb-0">Research assistant</p>
-                                </div> 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                    <div class="col-lg-6 position-relative">
-                    </div>
-            </div>
-
-        </section>
-
-                   <!--Block-->
-<!--                    <li class="accordion block">
-                        <div class="acc-btn">
-                        Participation in Conferences
-                        </div>
-                        <div class="acc-content  " style="display: none;">
-                            <div class="content ">
-                                <p class="mb-0">
-                                    2020 Bogotá Experimental Economics Conference. Universidad del Rosario.<br> 
-
-                                    2019 European ESA meeting in Dijon.  Burgundy School of Business. <br> 
-
-                                    2019 Maastricht Behavioral Economic Policy Symposium (M-BEPS). Maastricht University.<br> 
-
-                                    2019 Spring School in Behavioural Economics. UC San Diego.<br> 
-
-                                    2018 Behavioural Economics course by George Loewenstein. FAIR NHH.<br> 
-
-                                    2017 International Meeting on Experimental and Behavioral Social Sciences (IMEBESS). Universitat de Barcelona.<br> 
-
-                                    2016 Antigua Experimental Economics Conference. Francisco Marroquin University (as a master student).<br> 
-                                </p>
-                            </div>
-                        </div>
-                    </li>-->
-
-            </div>
-            </div>
-
-
-    <div class="mb-20 about" >
-            <div class="container-fluid">
-
-                        <h4 class="mb-30">Languages</h4>
-                <div class="row features mb-20">
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="item">
-                            <div class="icon mb-10">
-                                <img src="assets/img/skill/colombia.webp" alt="colombia">
-                            </div>
-                            <p class="mb-0">Spanish (Native)</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="item">
-                            <div class="icon mb-10">
-                                <img src="assets/img/skill/English.webp" alt="English">
-                            </div>
-                            <p class="mb-0">English, Fluent</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="item">
-                            <div class="icon mb-10">
-                                <img src="assets/img/skill/French.webp" alt="French">
-                            </div>
-                            <p class="mb-0">French, Advanced (B2)</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="item">
-                            <div class="icon mb-10">
-                                <img src="assets/img/skill/German.webp" alt="German">
-                            </div>
-                            <p class=" mb-0">German, Beginner (A2)</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid">
-                            <h4 class="mb-30">Computer Skills</h4>
-                <div class="row features mb-20">
-
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="item">
-                            <div class="icon mb-10">
-                                <img src="assets/img/skill/Pyhton.webp" alt="Pyhton">
-                            </div>
-                            <p class=" mb-0">Pyhton</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="item">
-                            <div class="icon mb-10">
-                                <img src="assets/img/skill/Z-tree.webp" alt="Z-tree">
-                            </div>
-                            <p class="mb-0">Z-tree</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="item">
-                            <div class="icon mb-10">
-                                <img src="assets/img/skill/otree.webp" alt="Otree">
-                            </div>
-                            <p class="mb-0">Otree</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="item">
-                            <div class="icon mb-10">
-                                <img src="assets/img/skill/R.webp" alt="R">
-                            </div>
-                            <p class="mb-0">R</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="item">
-                            <div class="icon mb-10">
-                                <img src="assets/img/skill/LATEX.webp" alt="LATEX">
-                            </div>
-                            <p class=" mb-0">LaTeX</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="item">
-                            <div class="icon mb-10">
-                                <img src="assets/img/skill/Stata.webp" alt="Stata">
-                            </div>
-                            <p class=" mb-0">Stata</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="item">
-                            <div class="icon mb-10">
-                                <img src="assets/img/skill/html5.webp" alt="html5">
-                            </div>
-                            <p class=" mb-0">html5</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="item">
-                            <div class="icon mb-10">
-                                <img src="assets/img/skill/css.webp" alt="css">
-                            </div>
-                            <p class=" mb-0">css</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="item">
-                            <div class="icon mb-10">
-                                <img src="assets/img/skill/bootstrap.webp" alt="bootstrap">
-                            </div>
-                            <p class=" mb-0">Bootstrap</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-<!--
-
-         Services
-        <section id="services" class="section services">
-            <div class="container-fluid">
-                <div class="row mb-50">
-                </div>
-                <div class="row">
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="item">
-                            <div class="circle">
-                               <h2>01</h2>
-                            </div>
-                            <div class="content ">
-                                <h5 class="mt-15 mb-10">Photography</h5>
-                                <p class="mb-0">
-                                     Lorem ipsum dolor sit amet consectetuer
-                                     adipiscing elit aenean commodo ligula eget.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                   
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="item">
-                            <div class="circle">
-                                <h2>02</h2>
-                            </div>
-                            <div class="content">
-                                <h5 class="mt-15 mb-10">Web Design</h5>
-                                <p class="mb-0">
-                                     Lorem ipsum dolor sit amet consectetuer
-                                      adipiscing elit aenean commodo ligula eget.</p>
-                            </div>
-                        </div>
-                    </div>
-                   
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="item">
-                            <div class="circle">
-                                <h2>03</h2>
-                            </div>
-                            <div class="content">
-                                <h5 class=" mt-15 mb-10">Web Development</h5>
-                                <p class="mb-0"> Lorem ipsum dolor sit amet 
-                                    consectetuer adipiscing elit aenean commodo ligula eget.</p>
-                            </div>
-                        </div>
-                    </div>
-                   
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="item">
-                            <div class="circle">
-                                <h2>04</h2>
-                            </div>
-                            <div class="content">
-                                <h5 class="mt-15 mb-10">Graphic Design</h5>
-                                <p class="mb-0"> Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="item">
-                            <div class="circle">
-                                <h2>05</h2>
-                            </div>
-                            <div class="content">
-                                <h5 class="mt-15 mb-10">Branding</h5>
-                                <p class="mb-0"> Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="item">
-                            <div class="circle">
-                                <h2>06</h2>
-                            </div>
-                            <div class="content">
-                                <h5 class="mt-15 mb-10">Marketing</h5>
-                                <p class="mb-0"> Lorem ipsum dolor sit
-                                     amet consectetuer adipiscing elit aenean commodo ligula eget.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
--->
-
-        <!-- testimonials-->
-        <!-- <section class="section testimonials">
-            <div class="container-fluid">
-                <div class="row mb-50">
-                    <div class="col-md-12">
-                        <div class="section-title">
-                            <h2 class="mb-0">My Clients</h2>
-                            <p class="text-muted mb-0">What My Clients Say About Me .</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="owl-carousel">
-                            
-                            <div class="item d-flex align-items-center">
-                                <div class="image">
-                                    <img src="assets/img/clients/1.jpg" alt="">
-                                </div>
-                                <div class="content">
-                                    <span class="icon_quotations_alt2 mb-0 icon"></span>
-                                    <p class="text-muted mb-30 mt-30">In a professional context it often happens that private or corporate clients corder a publication to be made.In a professional
-                                    context it often happens that private or corporate clients corder a publication to be made.</p>
-                                    
-                                    <p class="author mb-0 "> 
-                                        <span class="font-w-700">Amar Smith</span>  
-                                          <span class="dot"></span> Product Manager</p>
-                                </div>
-                            </div>
-                            
-                            
-                            <div class="item d-flex align-items-center">
-                                <div class="image">
-                                    <img src="assets/img/clients/2.jpg" alt="">
-                                </div>
-                                <div class="content">
-                                    <span class="icon_quotations_alt2 mb-0 icon"></span>
-                                    <p class="text-muted mb-30 mt-30">In a professional context it often happens that private or corporate clients corder a publication to be made.In a
-                                            professional context it often happens that private or corporate clients corder a publication to be made.</p>
-                                    <p class="author  mb-0 ">
-                                        <span class="font-w-700">Amar Smith</span>
-                                        <span class="dot"></span> Product Manager</p>
-                                </div>
-                            </div>
-
-                            
-                            <div class="item d-flex align-items-center">
-                                <div class="image">
-                                    <img src="assets/img/clients/3.jpg" alt="">
-                                </div>
-                                <div class="content">
-                                    <span class="icon_quotations_alt2 mb-0 icon"></span>
-                                    <p class="text-muted mb-30 mt-30">In a professional context it often happens that private or corporate clients corder a publication to be made.In a
-                                            professional context it often happens that private or corporate clients corder a publication to be made.</p>
-                                    <p class="author  mb-0 ">
-                                        <span class="font-w-700">Amar Smith</span>
-                                        <span class="dot"></span> Product Manager
-                                    </p>
-                                </div>
-                            </div>
-                        </div> 
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
-
-        <!-- Contact -->
-       <!--  <section class="section contact pb-70" id="contact">
-            <div class="container-fluid">
-                <div class="row mb-50">
-                    <div class="col-md-12">
-                        <div class="section-title">
-                            <h2 class="mb-0">Contact Me</h2>
-                            <p class="text-muted mb-0">Feel Free To Contact Me Any Time </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <form action="https://mariama.netlify.app/html/assets/php/mail.php" method="post" id="main_contact_form" class="form contact_form ">
-                            <div class="alert alert-success contact_msg " style="display: none" role="alert">
-                                Your message was sent successfully.
-                            </div>       
-                            <div class="form-group">
-                                <input type="text" name="name" id="name" class="form-control" placeholder="Name" required="required">
-                            </div>
-                                
-                            <div class="form-group">
-                                <input type="email" name="email" id="email" class="form-control" placeholder="Email" required="required">
-                            </div>
-                                          
-                            <div class="form-group">
-                                <input type="text" name="subject" id="subject" class="form-control" placeholder="Subject" required="required">
-                            </div>
-                                           
-                            <div class="form-group">
-                                <textarea name="message" id="message" cols="30" rows="5" class="form-control" placeholder="Message" required="required"></textarea>
-                            </div>
-                                    
-                            <button  type="submit" name="submit" class="btn-custom">
-                                <span><i class="fas fa-paper-plane"></i></span>
-                                <span> Send Message</span>
-                            </button>
-
-                        </form>
-                    </div>
-                    <div class="col-lg-6">
-                        <h5 >Let's talk about everything!</h5>
-                        <p class=" mb-30">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore. Lorem
-                            ipsum dolor sit amet, consectetuer adipiscing elit.
-                             Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
-                        <div class="contact-info">
-                            <div class="item mb-20">
-                                <p class="font-w-700 mb-0">Phone: </P>
-                                <p class="mb-0"><i class="fas fa-phone base-color"></i>+113-804-9098</p>
-                            </div>
-                            <div class="item mb-20">
-                                <p class="font-w-700 mb-0">Email: </p>
-                                <p class="mb-0"><i class="fas fa-envelope base-color"> </i> daniel.parra@wzb.eu </p>                                 
-                            </div>
-                            <div class="item mb-20">
-                                <p class=" font-w-700 mb-0">Adress: </p>
-                                <p class="mb-0"><i class="fas fa-map-marker-alt base-color"> </i>Germany.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
-        <!--Footer-->
-        <footer class="pt-30 pb-30">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12">
-                        <p class="text-center mb-0">© 2021 Daniel Parra. All Rights Reserved.</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-      <!--social-media-->
-        <div class="social-footer">
-            <ul class="list-inline social">
-                <li>
-                                    <a href="https://twitter.com/intent/follow?original_referer=https%3A%2F%2F1765226694-atari-embeds.googleusercontent.com%2F&ref_src=twsrc%5Etfw&screen_name=Danielf_Parra&tw_p=followbutton" target="_blank">
-                                        <img src="assets/img/twitter-b.webp" alt="twitter" title="twitter">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.researchgate.net/profile/Daniel-Parra-9" target="_blank">
-                                        <img src="assets/img/researchgate-b.webp" alt="researchgate" title="researchgate">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.linkedin.com/in/daniel-parra-econ/" target="_blank">
-                                        <img src="assets/img/likedin-b.webp" alt="likedin" title="likedin">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="mailto:daniel.parra@wzb.eu" target="_blank">
-                                        <img src="assets/img/email-b.webp" alt="email" title="email">
-                                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <!--Main End-->
-
-    <!--loading -->
-    <div class="loading">
-        <div class="circle"></div>
-    </div>
-    
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-  
-    <!-- JS Plugins  -->
-    <script src="assets/js/jquery.animatedheadline.min.js"></script>
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/ajax-contact.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="https://kit.fontawesome.com/46026ecfac.js" crossOrigin="anonymous"></script>
-</body>
-</html>
