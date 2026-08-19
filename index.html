@@ -127,9 +127,9 @@
   .hero-mail{font-family:var(--mono);font-size:13px;display:inline-flex;align-items:center;gap:9px;padding:12px 18px;border:1px solid var(--rule-strong);border-radius:100px;color:var(--ink);background:var(--bg-2);transition:border-color .2s,color .2s,transform .16s var(--ease-out)}
   .hero-mail:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
   .hero-mail svg{width:15px;height:15px;color:var(--accent)}
-  .hero-socials{display:flex;flex-wrap:wrap;gap:8px 16px;font-family:var(--mono);font-size:12px;letter-spacing:.02em}
-  .hero-socials a{color:var(--ink-2);transition:color .2s;border-bottom:1px solid transparent}
-  .hero-socials a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+  .hero-socials{display:flex;flex-wrap:wrap;gap:8px}
+  .hero-socials a{font-family:var(--mono);font-size:12px;letter-spacing:.02em;color:var(--ink-2);padding:12px 16px;border:1px solid var(--rule-strong);border-radius:100px;display:inline-flex;align-items:center;transition:border-color .2s,color .2s,transform .16s var(--ease-out)}
+  .hero-socials a:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
   .btn{font-family:var(--mono);font-size:13px;padding:14px 22px;border-radius:100px;transition:transform .16s var(--ease-out),background .2s,border-color .2s,color .2s;display:inline-flex;align-items:center;gap:10px;cursor:pointer}
   .btn-primary{background:var(--ink);color:var(--bg);border:1px solid var(--ink)}
   .btn-primary:hover{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);transform:translateY(-2px)}
@@ -187,22 +187,11 @@
   .method-tags span{font-family:var(--mono);font-size:10px;color:var(--ink-3);padding:4px 10px;background:var(--bg-2);border-radius:100px;letter-spacing:.04em}
   .method:hover .method-tags span{background:var(--bg-3)}
 
-  /* Marquee banner — visual break */
-  .banner{margin:0 -32px;padding:48px 0;border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule-strong);overflow:hidden;white-space:nowrap}
-  .banner-track{display:inline-flex;gap:56px;animation:scroll 60s linear infinite;padding-left:56px;font-family:var(--serif);font-weight:500;font-size:clamp(48px,6vw,84px);letter-spacing:-.03em;line-height:1}
-  .banner-track span{display:inline-flex;align-items:center;gap:56px;color:var(--ink)}
-  .banner-track em{font-style:normal;font-weight:300;color:var(--accent)}
-  .banner-track i{font-style:normal;color:var(--ink-3);font-size:.6em}
-  @keyframes scroll{to{transform:translateX(-50%)}}
-
   /* ─── RESEARCH ───────────────────────────────────────────── */
-  .research-head{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:end;margin-bottom:56px}
-  .research-stats{display:flex;gap:32px;font-family:var(--mono);font-size:12px;color:var(--ink-3)}
-  .research-stats b{display:block;font-family:var(--serif);font-size:36px;color:var(--accent);letter-spacing:-.02em;line-height:1;margin-bottom:6px}
+  .research-head{margin-bottom:56px}
 
-  .group-sep{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);padding:28px 0 16px;border-bottom:1px solid var(--rule-strong);display:flex;justify-content:space-between;margin-top:24px}
+  .group-sep{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);padding:28px 0 16px;border-bottom:1px solid var(--rule-strong);margin-top:24px}
   .group-sep:first-of-type{margin-top:0}
-  .group-sep .count{color:var(--accent)}
 
   .paper{border-bottom:1px solid var(--rule);cursor:pointer;transition:background .25s;position:relative}
   .paper::before{content:"";position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--accent);transform:scaleY(0);transform-origin:top;transition:transform .3s}
@@ -212,7 +201,7 @@
 
   .p-head{display:grid;grid-template-columns:60px 1fr 220px 44px;gap:28px;padding:28px 24px;align-items:center;transition:background .2s}
   .paper:hover .p-head{background:color-mix(in oklab,var(--accent) 4%,transparent)}
-  .p-num{font-family:var(--mono);font-size:12px;color:var(--ink-3);letter-spacing:.06em}
+  .p-num{font-size:18px;line-height:1;color:var(--ink-3);transition:color .3s}
   .paper:hover .p-num,.paper.open .p-num{color:var(--accent)}
   .p-title{font-family:var(--serif);font-weight:500;font-size:26px;line-height:1.2;letter-spacing:-.02em;color:var(--ink)}
   .p-title em{font-style:normal;font-weight:300}
@@ -231,7 +220,7 @@
   .p-authors{font-size:13px;color:var(--ink-3);margin-bottom:16px;font-style:italic}
   .p-authors a{color:var(--ink-2);border-bottom:1px dotted var(--ink-3)}
   .p-abstract{font-size:16px;line-height:1.75;color:var(--ink-2);max-width:820px;margin-bottom:24px}
-  .p-abstract em{color:var(--accent);font-style:italic;font-weight:500}
+  .p-abstract em{color:var(--accent);font-style:normal;font-weight:300}
   .p-links{display:flex;gap:10px;flex-wrap:wrap}
   .p-links a{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.1em;padding:9px 16px;border:1px solid var(--rule-strong);color:var(--ink);border-radius:100px;transition:background .2s,border-color .2s,color .2s,transform .2s;display:inline-flex;align-items:center;gap:8px}
   .p-links a:hover{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);transform:translateY(-1px)}
@@ -240,7 +229,6 @@
   .cv{display:grid;grid-template-columns:1fr 1fr;gap:72px}
   .cv-col h3{font-family:var(--serif);font-size:32px;letter-spacing:-.02em;font-weight:500;margin-bottom:36px;display:flex;align-items:baseline;gap:16px}
   .cv-col h3 em{font-style:normal;font-weight:300;color:var(--accent)}
-  .cv-col h3 .num{font-family:var(--mono);font-size:11px;color:var(--ink-3);letter-spacing:.16em}
   .cv-item{padding:22px 0;display:grid;grid-template-columns:90px 1fr;gap:24px;border-top:1px solid var(--rule);position:relative;transition:transform .25s var(--ease-out)}
   .cv-item:hover{transform:translateX(8px)}
   .cv-item:first-child{border-top-color:var(--rule-strong)}
@@ -253,6 +241,8 @@
   .skills h4{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);margin-bottom:20px}
   .skills h4 b{color:var(--accent);font-weight:500}
   .pill-row{display:flex;flex-wrap:wrap;gap:6px}
+  .pill-group + .pill-group{margin-top:18px}
+  .pill-sublabel{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);margin-bottom:10px}
   .pill{font-family:var(--mono);font-size:11px;padding:9px 14px;border:1px solid var(--rule-strong);border-radius:100px;color:var(--ink-2);transition:border-color .2s,color .2s,transform .2s;letter-spacing:.02em;cursor:default}
   .pill:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-1px)}
   .pill .note{opacity:.7;margin-left:6px}
@@ -288,11 +278,10 @@
     .portrait-wrap{justify-self:stretch;max-width:none}
     section{padding:56px 20px}
     .methods{grid-template-columns:1fr}
-    .research-head{grid-template-columns:1fr}
-    .p-head{grid-template-columns:1fr 44px;gap:6px 12px;padding:20px 12px;align-items:start}
-    .p-num{display:none}
-    .p-meta{flex-flow:row wrap;align-items:baseline;gap:4px 12px;text-align:left;grid-column:1;grid-row:2;margin-top:2px}
-    .p-toggle{grid-column:2;grid-row:1}
+    .p-head{grid-template-columns:34px 1fr 44px;gap:6px 10px;padding:20px 12px;align-items:start}
+    .p-num{font-size:14px}
+    .p-meta{flex-flow:row wrap;align-items:baseline;gap:4px 12px;text-align:left;grid-column:1 / -1;grid-row:2;margin-top:2px}
+    .p-toggle{grid-column:3;grid-row:1}
     .p-body{padding:0 12px}
     .paper.open .p-body{padding-bottom:24px}
     .cv{grid-template-columns:1fr;gap:56px}
@@ -301,9 +290,6 @@
     .hero-meta{grid-template-columns:1fr 1fr}
     .scroll-cue{display:none}
   }
-
-  /* Pause marquee on hover so readers can catch the keywords */
-  .banner:hover .banner-track{animation-play-state:paused}
 
   /* Touch devices fire :hover on tap and it sticks — drop movement hovers */
   @media (hover:none){
@@ -320,7 +306,6 @@
       transition-duration:.01ms!important;
       scroll-behavior:auto!important;
     }
-    .banner-track{animation:none!important;transform:none!important}
     .scroll-cue .line::after,.brand-dot,.hero-kicker .pulse,
     .portrait-badge .dot,.foot-bottom .dot{animation:none!important}
   }
@@ -368,7 +353,6 @@
       <span class="chip">Corruption</span>
       <span class="chip">Prosociality</span>
       <span class="chip">Lab &amp; online experiments</span>
-      <span class="chip">Applied microeconomics</span>
     </div>
     <div class="hero-actions">
       <a href="#research" class="btn btn-primary">Read the research
@@ -436,52 +420,18 @@
       <div class="method-tags"><span>oTree</span><span>WZB Lab</span><span>JaBElab</span></div>
     </div>
   </div>
-
-  <div class="banner" aria-hidden="true">
-    <div class="banner-track">
-      <span>Behavioral <i>·</i> <em>experimental</em> <i>·</i> Lying <i>·</i> <em>corruption</em> <i>·</i> Prosociality <i>·</i> <em>ethics</em> <i>·</i> Behavioral <i>·</i> <em>experimental</em> <i>·</i> Lying <i>·</i> <em>corruption</em> <i>·</i> Prosociality <i>·</i> <em>ethics</em> <i>·</i> </span>
-    </div>
-  </div>
 </section>
 
 <section id="research">
   <div class="section-label">Research<span class="line"></span></div>
   <div class="research-head">
-    <div>
-      <h2>Papers on lying, corruption &amp; the <em>cost of honesty</em>.</h2>
-      <p class="section-intro">Each paper expands to the full abstract, authorship, and links to the working paper, publication, and press coverage.</p>
-    </div>
-    <div class="research-stats">
-      <div><b>06</b>published</div>
-      <div><b>03</b>working papers</div>
-      <div><b>02</b>in progress</div>
-    </div>
+    <p class="section-intro">Each paper expands to the full abstract, authorship, and links to the working paper, publication, and press coverage.</p>
   </div>
 
-  <div class="group-sep"><span>Working Papers</span><span class="count">03</span></div>
+  <div class="group-sep"><span>Working Papers</span></div>
   <article class="paper">
     <div class="p-head">
-      <span class="p-num">① /01</span>
-      <div>
-        <div class="p-title">The impact of Lying Aversion and Prosocial Lies on Cheating</div>
-        <div class="p-hook">Prosocial motives outweigh lying aversion, but only when your lie <em>helps</em> someone.</div>
-      </div>
-      <div class="p-meta"><span class="year">2024</span><span class="venue">R&amp;R · Experimental Economics</span><span>Lab experiment</span></div>
-      <div class="p-toggle"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 2v8M2 6h8"></path></svg></div>
-    </div>
-    <div class="p-body"><div class="p-body-inner">
-      <p class="p-abstract">This paper examines how prosocial motivations shape lying behavior in a strategic setting where two players privately observe and report a random draw. I develop a theoretical model predicting that individuals will lie less when others can lie on their behalf (<em>strategic substitution</em>), but more when their dishonesty generates positive externalities (<em>prosocial lying</em>). To test these predictions, I design a laboratory experiment using a two-player mind game in which both players benefit if at least one reports a match. Four treatments isolate the roles of strategic avoidance and prosocial incentives. The results show that prosocial motives outweigh lying aversion: participants lie significantly more when their dishonesty benefits others, even when they could avoid lying costs by allowing their partner to lie. These findings suggest that prosocial preferences can substantially offset the psychological costs of lying, <em>but only when individuals’ actions are instrumental in producing gains for others</em>.</p>
-      <div class="p-links">
-        <a href="https://danielfparra.github.io/assets/JMP_Daniel_Parra.pdf">Working Paper <span>↗</span></a>
-        <a href="https://danielfparra.github.io/assets/Infographic_JMP_PARRA.png">Infographic</a>
-      </div>
-      </div>
-    </div>
-  </article>
-
-  <article class="paper">
-    <div class="p-head">
-      <span class="p-num">② /02</span>
+      <span class="p-num">•</span>
       <div>
         <div class="p-title">Intentions versus Outcomes: The Effect of Corruption on Tax Evasion</div>
         <div class="p-hook">Neither the odds nor the intent of corruption is enough to move tax compliance.</div>
@@ -498,7 +448,7 @@
 
   <article class="paper">
     <div class="p-head">
-      <span class="p-num">③ /03</span>
+      <span class="p-num">•</span>
       <div>
         <div class="p-title">Coding Open-ended Responses with Large Language Models: Evidence from Three Economic Experiments</div>
         <div class="p-hook">GPT, Claude &amp; Gemini code experimental text reliably, but only when categories are explicit.</div>
@@ -514,11 +464,31 @@
     </div>
   </article>
 
-  <div class="group-sep"><span>Publications</span><span class="count">06</span></div>
+  <div class="group-sep"><span>Publications</span></div>
 
   <article class="paper">
     <div class="p-head">
-      <span class="p-num">④ /04</span>
+      <span class="p-num">•</span>
+      <div>
+        <div class="p-title">The impact of Lying Aversion and Prosocial Lies on Cheating</div>
+        <div class="p-hook">Prosocial motives outweigh lying aversion, but only when your lie <em>helps</em> someone.</div>
+      </div>
+      <div class="p-meta"><span class="year">Forthcoming</span><span class="venue">Experimental Economics</span><span>Lab experiment</span></div>
+      <div class="p-toggle"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 2v8M2 6h8"></path></svg></div>
+    </div>
+    <div class="p-body"><div class="p-body-inner">
+      <p class="p-abstract">This paper examines how prosocial motivations shape lying behavior in a strategic setting where two players privately observe and report a random draw. I develop a theoretical model predicting that individuals will lie less when others can lie on their behalf (<em>strategic substitution</em>), but more when their dishonesty generates positive externalities (<em>prosocial lying</em>). To test these predictions, I design a laboratory experiment using a two-player mind game in which both players benefit if at least one reports a match. Four treatments isolate the roles of strategic avoidance and prosocial incentives. The results show that prosocial motives outweigh lying aversion: participants lie significantly more when their dishonesty benefits others, even when they could avoid lying costs by allowing their partner to lie. These findings suggest that prosocial preferences can substantially offset the psychological costs of lying, <em>but only when individuals’ actions are instrumental in producing gains for others</em>.</p>
+      <div class="p-links">
+        <a href="https://danielfparra.github.io/assets/JMP_Daniel_Parra.pdf">Working Paper <span>↗</span></a>
+        <a href="https://danielfparra.github.io/assets/Infographic_JMP_PARRA.png">Infographic</a>
+      </div>
+      </div>
+    </div>
+  </article>
+
+  <article class="paper">
+    <div class="p-head">
+      <span class="p-num">•</span>
       <div>
         <div class="p-title">Academic exam periods and ultra-processed food consumption: evidence from supermarket transactions in a Colombian university</div>
         <div class="p-hook">Exam stress shows up in students' real supermarket purchases.</div>
@@ -536,7 +506,7 @@
 
   <article class="paper">
     <div class="p-head">
-      <span class="p-num">⑤ /05</span>
+      <span class="p-num">•</span>
       <div>
         <div class="p-title">Eliciting dishonesty in online experiments: observed vs. mind cheating games</div>
         <div class="p-hook">Making lies unidentifiable at the individual level.</div>
@@ -553,7 +523,7 @@
 
   <article class="paper">
     <div class="p-head">
-      <span class="p-num">⑥ /06</span>
+      <span class="p-num">•</span>
       <div>
         <div class="p-title">Observability and lying</div>
         <div class="p-hook">Covered in <i>Psychology Today</i>.</div>
@@ -574,7 +544,7 @@
 
   <article class="paper">
     <div class="p-head">
-      <span class="p-num">⑦ /07</span>
+      <span class="p-num">•</span>
       <div>
         <div class="p-title">Because I (don't) deserve it: Entitlement and lying behavior</div>
         <div class="p-hook">Deservingness influences lying, in an intuitive direction.</div>
@@ -596,7 +566,7 @@
 
   <article class="paper">
     <div class="p-head">
-      <span class="p-num">⑧ /08</span>
+      <span class="p-num">•</span>
       <div>
         <div class="p-title">The limits of transparency in reducing corruption</div>
         <div class="p-hook">Transparency deters embezzlement, not bribery.</div>
@@ -617,7 +587,7 @@
 
   <article class="paper">
     <div class="p-head">
-      <span class="p-num">⑨ /09</span>
+      <span class="p-num">•</span>
       <div>
         <div class="p-title">The role of suggestions and tips in distorting a third party's decision</div>
         <div class="p-hook">Tips bias allocation; suggestions can backfire.</div>
@@ -632,10 +602,10 @@
     </div>
   </article>
 
-  <div class="group-sep"><span>Work in Progress</span><span class="count">02</span></div>
+  <div class="group-sep"><span>Work in Progress</span></div>
   <article class="paper">
     <div class="p-head">
-      <span class="p-num">⑩ /10</span>
+      <span class="p-num">•</span>
       <div>
         <div class="p-title">Noise annoys: the effect of noise on cognitive performance</div>
         <div class="p-hook">Human noise hurts memory and mood; machine noise mostly just annoys.</div>
@@ -652,7 +622,7 @@
 
   <article class="paper static">
     <div class="p-head">
-      <span class="p-num">⑪ /11</span>
+      <span class="p-num">•</span>
       <div>
         <div class="p-title">Cheap talk and honesty</div>
         <div class="p-hook">with Tilman Fries · data collected.</div>
@@ -671,7 +641,7 @@
 
   <div class="cv">
     <div class="cv-col">
-      <h3><em>Education</em><span class="num">03 entries</span></h3>
+      <h3><em>Education</em></h3>
       <div class="cv-item">
         <div class="cv-years">2017–2022</div>
         <div>
@@ -696,7 +666,7 @@
     </div>
 
     <div class="cv-col">
-      <h3><em>Experience</em><span class="num">06 entries</span></h3>
+      <h3><em>Experience</em></h3>
       <div class="cv-item"><div class="cv-years">2022–</div><div><div class="cv-role">Assistant Professor</div><div class="cv-place">Pontificia Universidad Javeriana · Bogotá</div></div></div>
       <div class="cv-item"><div class="cv-years">2017–22</div><div><div class="cv-role">Research Fellow</div><div class="cv-place">Berlin Social Science Center (WZB)</div></div></div>
       <div class="cv-item"><div class="cv-years">2015–17</div><div><div class="cv-role">Researcher &amp; Lecturer</div><div class="cv-place">Catholic University of Colombia</div></div></div>
@@ -718,15 +688,23 @@
     </div>
     <div>
       <h4><b>—</b> Tools &amp; methods</h4>
-      <div class="pill-row">
-        <span class="pill">Python</span>
-        <span class="pill">R</span>
-        <span class="pill">Stata</span>
-        <span class="pill">LaTeX</span>
-        <span class="pill">oTree</span>
-        <span class="pill">z-Tree</span>
-        <span class="pill">HTML / CSS</span>
-        <span class="pill">Bootstrap</span>
+      <div class="pill-group">
+        <span class="pill-sublabel">Analysis</span>
+        <div class="pill-row">
+          <span class="pill">Python</span>
+          <span class="pill">R</span>
+          <span class="pill">Stata</span>
+          <span class="pill">LaTeX</span>
+        </div>
+      </div>
+      <div class="pill-group">
+        <span class="pill-sublabel">Experiments &amp; web</span>
+        <div class="pill-row">
+          <span class="pill">oTree</span>
+          <span class="pill">z-Tree</span>
+          <span class="pill">HTML / CSS</span>
+          <span class="pill">Bootstrap</span>
+        </div>
       </div>
     </div>
   </div>
